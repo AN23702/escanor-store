@@ -45,6 +45,7 @@
 .header-top b{
     color: white;
     font-size: 16px;
+    margin-left: 5px;
 }
 
 .header-top .header-top-content .user{
@@ -52,7 +53,7 @@
 }
 
 .header-top .header-top-content .user .cart{
-    margin-left: 15px;
+    margin-left: 20px;
 }
 
 
@@ -98,4 +99,60 @@ height: 100%;
 .owl-prev,
 .owl-next {
     display: none !important;
+}
+
+.header-main .wrap-main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-main .wrap-main .menu-main{
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+.header-main .wrap-main .menu-main li{
+    margin-left: 24px;
+    list-style: none;
+}
+
+.header-main .wrap-main .menu-main li a{
+    color: black;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.header-main .wrap-main .search{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    
+    border: 1px solid black;
+    border-radius: 22px;
+    background-color: white;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.header-main .wrap-main .search input{
+    border: none;
+    width: calc(180px - 36px);
+    height: 36px;
+    border-radius: 22px;
+}
+
+.header-main .wrap-main .search input:focus{
+    outline: none;
+}
+
+.header-main .wrap-main .search button{
+    border: none;
+    width: 36px;
+    height: 36px;
+    background-color:white;
+    border-radius: 22px;
 }
