@@ -115,7 +115,7 @@ height: 100%;
 }
 
 .header-main .wrap-main .menu-main li{
-    margin-left: 24px;
+    margin-left: 28px;
     list-style: none;
 }
 
@@ -128,21 +128,23 @@ height: 100%;
 .header-main .wrap-main .search{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    /* justify-content: space-between; */
 
     
     border: 1px solid black;
     border-radius: 22px;
     background-color: white;
-    padding-left: 5px;
+    padding-left: 10px;
     padding-right: 5px;
+    width: 200px;
+    height: 40px;
 }
 
 .header-main .wrap-main .search input{
     border: none;
     width: calc(180px - 36px);
-    height: 36px;
-    border-radius: 22px;
+    height: 32px;
+    /* border-radius: 22px; */
 }
 
 .header-main .wrap-main .search input:focus{
@@ -151,8 +153,56 @@ height: 100%;
 
 .header-main .wrap-main .search button{
     border: none;
-    width: 36px;
-    height: 36px;
+    width: 32px;
+    height: 32px;
     background-color:white;
     border-radius: 22px;
+}
+
+
+/* Banner */
+.banner img{
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Main index */
+.main-index{
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 50px;
+    padding: 50px 0;
+}
+
+.main-index .sale-products{
+    background-color: pink;
+    width: 100%;
+}
+
+.main-index .sale-products .title-products{
+    height: 140px;
+}
+
+.main-index .sale-products .title-products h2{
+    font-weight: 1000;
+    font-size: 30px;
+
+    text-align: center;
+    line-height: 140px;
+    position: relative;
+}
+
+.main-index .sale-products .title-products h2 i{
+    position: absolute;
+    top: 40px;
+    right: 300px;
+    color: red;
+
+    width: 100px ;
+    height: 100px;
 }
