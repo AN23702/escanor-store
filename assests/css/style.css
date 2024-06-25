@@ -7,7 +7,7 @@
         url('../fonts/montserrat/Montserrat-Thin.woff') format('woff'),
         url('../fonts/montserrat/Montserrat-Thin.ttf') format('truetype'),
         url('../fonts/montserrat/Montserrat-Thin.svg#Montserrat-Thin') format('svg');
-    font-weight: 100;
+    /* font-weight: 100; */
     font-style: normal;
     font-display: swap;
 }
@@ -38,14 +38,13 @@
 
 .header-top i{
     color: white;
-    width: 16px;
-    height: auto;
+    font-size: 14px;
 }
 
 .header-top b{
     color: white;
-    font-size: 16px;
-    margin-left: 5px;
+    font-size: 12px;
+    margin-left: 4px;
 }
 
 .header-top .header-top-content .user{
@@ -117,6 +116,22 @@ height: 100%;
 .header-main .wrap-main .menu-main li{
     margin-left: 28px;
     list-style: none;
+
+    position: relative;
+}
+
+.header-main .wrap-main .menu-main li::before{
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    height: 2px;
+    width: 0;
+    background-color: black;
+    transition: width .3s;
+}
+
+.header-main .wrap-main .menu-main li:hover::before{
+    width: 100%;
 }
 
 .header-main .wrap-main .menu-main li a{
@@ -186,11 +201,11 @@ height: 100%;
 
 .main-index .sale-products .title-products{
     height: 140px;
-    position: relative;
+    /* position: relative; */
 }
 
 .main-index .sale-products .title-products h2{
-    font-weight: 1000;
+    font-weight: 900;
     font-size: 30px;
 
     text-align: center;
@@ -198,32 +213,34 @@ height: 100%;
 }
 
 .main-index .sale-products .title-products i{
-    position: absolute;
+    /* position: absolute;
     top: 40px;
     right: 300px;
     color: red;
 
     width: 70px;
     height: auto;
-    z-index: 1;
+    z-index: 1; */
 }
 
 .main-index .sale-products .products-card{
-    background-color: green;
+    background-color: white;
     width: 100%;
-    height: 544px;
-    margin-bottom: 28px;
+    margin-bottom: 20px;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 16px;
+    padding-bottom: 40px;
+    padding-top: 16px;
+    position: relative;
 }
 
 .main-index .sale-products .products-card .products-img{
-    width: 196px;
-    height: 264px;
+    width: 85%;
+    height: auto;
 }
 
 .main-index .sale-products .products-card .products-img img{
@@ -233,19 +250,18 @@ height: 100%;
 }
 
 .main-index .sale-products .products-card .products-detail {
-    width: 196px;
-    height: 60px;
+    width: 85%;
+    /* height: 60px; */
 
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    /* gap: 10px; */
+    gap: 0px;
 }
-
 .main-index .sale-products .products-card .products-detail .products-name{
     font-size: 14px;
-    font-weight: 700;
+    font-weight: 600;
     height: 20px;
     margin-bottom: 0;
 }
@@ -259,15 +275,65 @@ height: 100%;
     height: 20px;
 }
 
-.main-index .sale-products .products-card .products-detail .products-price p{
+.main-index .sale-products .products-card .products-detail .products-price .old-price{
     font-size: 12px;
     margin-bottom: 0;
+}
+
+.main-index .sale-products .products-card .products-detail .products-price .new-price{
+    font-size: 12px;
+    margin-bottom: 0;
+    font-weight: 700;
 }
 
 .main-index .sale-products .products-card .products-detail .frame-sale{
     color: red;
     font-weight: 700;
-    font-size: 14px;
+    font-size: 12px;
     height: 20px;
+    margin-bottom: 0;
+}
+
+.main-index .sale-products .products-card .quickview-detailview{
+    background-color: black;
+    width: 100%;
+    height: 36px;
+    position: absolute;
+    bottom: -36px;
+    display: flex;
+
+    transition: bottom .4s;
+    z-index: -1;
+}
+
+
+.main-index .sale-products .products-card:hover .quickview-detailview{
+    bottom: 0;
+    z-index: 1;
+}
+
+
+
+.main-index .sale-products .products-card .quickview-detailview a{
+    width: 50%;
+    height: 100%;
+    border: 1px white solid;
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    text-decoration: none;
+}
+
+.main-index .sale-products .products-card .quickview-detailview a i{
+    color: white;
+    font-size: 8px;
+}
+
+.main-index .sale-products .products-card .quickview-detailview a p{
+    color: white;
+    font-size: 8px;
+    font-weight: 700;
     margin-bottom: 0;
 }
