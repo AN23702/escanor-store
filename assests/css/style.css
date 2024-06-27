@@ -53,6 +53,24 @@
 
 .header-top .header-top-content .user .cart{
     margin-left: 20px;
+    position: relative;
+}
+
+.header-top .header-top-content .user .cart span{
+    position: absolute;
+    top: -4px;
+    right: -16px;
+    width: 16px;
+    height: 16px;
+    background-color: red;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    color: white;
+    font-weight: 700;
 }
 
 
@@ -478,4 +496,29 @@ height: 100%;
 
 .footer .bottom-footer ul{
     padding-left: 0;
+}
+
+/* Nut quay lai dau trang */
+.back-to-header{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+
+    background-color: #484848;
+    border: 1px solid white;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    z-index: 100;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+}
+
+.back-to-header i{
+    color:white;
+    font-size: 28px;
 }
