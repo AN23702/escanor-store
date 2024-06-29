@@ -259,6 +259,11 @@ height: 100%;
     padding-bottom: 40px;
     padding-top: 16px;
     position: relative;
+    border: none;
+}
+
+.main-index .container-products .products-card:hover{
+    border: 1px solid grey;
 }
 
 .main-index .container-products .products-card .products-img{

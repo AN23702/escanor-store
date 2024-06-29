@@ -18,3 +18,12 @@ $('.owl-carousel').owlCarousel({
         }
     }
 })
+
+/* Nut quay lai dau trang */
+window.onscroll = function() {
+    if (window.pageYOffset > 0) {
+      document.querySelector('.back-to-header').style.right = '20px';
+    } else {
+      document.querySelector('.back-to-header').style.right = '-9999999px';
+    }
+  };
