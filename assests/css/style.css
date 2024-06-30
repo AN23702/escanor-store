@@ -51,6 +51,10 @@
     display: flex;
 }
 
+.header-top .header-top-content .user a{
+    text-decoration: none;
+}
+
 .header-top .header-top-content .user .cart{
     margin-left: 20px;
     position: relative;
@@ -137,6 +141,14 @@ height: 100%;
     list-style: none;
 
     position: relative;
+}
+
+.menu-main .active{
+    background-color: black;
+}
+
+.menu-main .active a{
+    color: white;
 }
 
 .menu-main li::before{
