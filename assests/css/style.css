@@ -143,12 +143,12 @@ height: 100%;
     position: relative;
 }
 
-.menu-main .active{
+/* .menu-main .active{
     background-color: black;
-}
+} */
 
 .menu-main .active a{
-    color: white;
+    color: red;
 }
 
 .menu-main li::before{
