@@ -558,42 +558,129 @@ height: 100%;
     justify-content: flex-start;
     gap: 80px;
 
-    position: relative;
     padding-right: 80px;
+}
+
+.filter .left-filter a{
+    text-decoration: none;
+    color: black;
+}
+
+.filter .left-filter .classify-filter{
+    position: relative;
     cursor: pointer;
 }
 
-.filter .left-filter .content-filter{
-    position: absolute;
-
-    width: 100%;
-    height: auto;
-    background-color: green;
-    left: -99999px;
-    top: 32px;
-
-    padding-top: 8px;
-    padding-bottom: 16px;
-    display: flex;
-    justify-content: flex-start;
-    gap: 31px;
-
-    font-size: 14px;
-    font-weight: 700;
-
-    border: .5px solid grey;
-    background-color: white;
+.filter .left-filter .size-filter{
+    position: relative;
+    cursor: pointer;
 }
 
-.filter .left-filter .content-filter .check-box-price{
-    margin-left: 49px;
+.filter .left-filter .price-filter{
+    position: relative;
+    cursor: pointer;
+}
+
+
+.filter .left-filter .classify-filter .check-box-classify{
+    position: absolute ;
+    left: 0;
+    width: calc(100% + 80px);
+    top: 100%;
+
+    padding: 16px 0;
+    font-size: 14px;
+    font-weight: 700; 
+    background-color: whitesmoke;
+
+    display: none;
+}
+
+.filter .left-filter .size-filter .check-box-size{
+    position: absolute ;
+    left: 0;
+    width: calc(100% + 80px);
+    top: 100%;
+
+    padding: 16px 0;
+    font-size: 14px;
+    font-weight: 700; 
+    background-color: whitesmoke;
+
+    display: none;
+}
+
+.filter .left-filter .price-filter .check-box-price{
+    position: absolute ;
+    left: 0;
+    width: calc(100% + 80px);
+    top: 100%;
+
+    padding: 16px 0;
+    font-size: 14px;
+    font-weight: 700; 
+    background-color: whitesmoke;
+
+    display: none;
+}
+
+@keyframes rotate90 {
+    from {
+      transform: rotate(-90deg);
+    }
+    to {
+      transform: rotate(0deg);
+    }
+  }
+  
+  @keyframes rotateBack {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(-90deg);
+    }
+  }
+
+.filter .left-filter i{
+    transform: rotate(-90deg);
+    animation: rotateBack .2s ease-in-out 1 forwards;
+}
+
+
+.filter .left-filter .classify-filter:hover .check-box-classify{
+    display: block;
+    z-index: 1;
+}
+
+.filter .left-filter .classify-filter:hover .arrow-classify-filter{
+    transform: rotate(0deg);
+    animation: rotate90 .2s ease-in-out 1 forwards;
+}
+
+.filter .left-filter .size-filter:hover .check-box-size{
+    display: block;
+    z-index: 1;
+}
+
+.filter .left-filter .size-filter:hover .arrow-size-filter{
+    transform: rotate(0deg);
+    animation: rotate90 .2s ease-in-out 1 forwards;
+}
+
+.filter .left-filter .price-filter:hover .check-box-price{
+    display: block;
+    z-index: 1;
+}
+
+.filter .left-filter .price-filter:hover .arrow-price-filter{
+    transform: rotate(0deg);
+    animation: rotate90 .2s ease-in-out 1 forwards;
 }
 
 .filter .right-filter{
 
     height: 100%;
-    background-color: purple;
-
     display: flex;
     justify-content: flex-end;
 }
@@ -609,7 +696,13 @@ height: 100%;
     margin-left: 4px;
 }
 
-.filter:hover .content-filter{
-    left: 0;
-    z-index: 1;
+.filter .right-filter select{
+    border: none;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.filter .right-filter select option{
+    font-size: 14px;
+    font-weight: 700;
 }
