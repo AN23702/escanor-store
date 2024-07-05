@@ -519,13 +519,13 @@ height: 100%;
 /* Nut quay lai dau trang */
 .back-to-header{
     position: fixed;
-    bottom: 20px;
+    bottom: 90px;
     right: 20px;
 
     background-color: #484848;
     border: 1px solid white;
-    width: 40px;
-    height: 40px;
+    width: 48px;
+    height: 48px;
     border-radius: 50%;
     z-index: 100;
 
@@ -539,6 +539,48 @@ height: 100%;
 .back-to-header i{
     color:white;
     font-size: 24px;
+}
+
+/* Nut chat */
+.chat-button{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+
+    background-color: #484848;
+    border: 1px solid white;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    z-index: 100;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.chat-button .fix-chat-button i{
+    color:white;
+    font-size: 22px;
+    animation: shake 1s infinite ease-out;
+}
+
+.chat-button .fix-chat-button{
+    position: relative;
+}
+
+.chat-button .fix-chat-button .chat-box{
+    position: absolute;
+
+    background-color: pink;
+    padding: 20px 10px 40px;
+    border-radius: 10px;
+    width: 300px;
+    height: 350px;
+    bottom: 20px;
+    right: 16px;
+
 }
 
 /* Filter */
@@ -624,23 +666,6 @@ height: 100%;
     display: none;
 }
 
-@keyframes rotate90 {
-    from {
-      transform: rotate(-90deg);
-    }
-    to {
-      transform: rotate(0deg);
-    }
-  }
-  
-  @keyframes rotateBack {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(-90deg);
-    }
-  }
 
 .filter .left-filter i{
     transform: rotate(-90deg);
@@ -706,3 +731,48 @@ height: 100%;
     font-size: 14px;
     font-weight: 700;
 }
+
+
+/* Animation */
+
+@keyframes shake {
+    0% {
+        transform: rotate(0deg) scale(1) skew(1deg);
+    }
+    10% {
+        transform: rotate(-25deg) scale(1) skew(1deg);
+    }
+    20% {
+        transform: rotate(25deg) scale(1) skew(1deg);
+    }
+    30% {
+        transform: rotate(-25deg) scale(1) skew(1deg);
+    }
+    40% {
+        transform: rotate(25deg) scale(1) skew(1deg);
+    }
+    50% {
+        transform: rotate(0deg) scale(1) skew(1deg);
+    }
+    100% {
+        transform: rotate(0deg) scale(1) skew(1deg);
+    }
+}
+
+@keyframes rotate90 {
+    from {
+      transform: rotate(-90deg);
+    }
+    to {
+      transform: rotate(0deg);
+    }
+  }
+  
+  @keyframes rotateBack {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(-90deg);
+    }
+  }
