@@ -143,14 +143,17 @@ height: 100%;
     list-style: none;
 
     position: relative;
+
 }
 
-/* .menu-main .active{
-    background-color: black;
-} */
+.menu-main li:first-child{
+    margin-left: 0;
+}
+
+
 
 .menu-main .active a{
-    color: red;
+    color: #ff0000;
 }
 
 .menu-main li::before{
@@ -207,6 +210,93 @@ height: 100%;
     border-radius: 22px;
 }
 
+/* Sub menu */
+.menu-main .sub-menu-shirt{
+    position: relative;
+}
+
+.menu-main .sub-menu-trousers{
+    position: relative;
+}
+
+.menu-main .sub-menu-accessories{
+    position: relative;
+}
+
+
+
+.menu-main .sub-menu-shirt .sub-menu-shirt-content{
+    position: absolute;
+    background-color: white;
+    padding: 10px 20px;
+    top: 120%;
+    z-index: 2;
+    left: 0;
+}
+
+.menu-main .sub-menu-trousers .sub-menu-trousers-content{
+    position: absolute;
+    background-color: white;
+    padding: 10px 20px;
+    top: 120%;
+    z-index: 2;
+    left: 0;
+}
+
+.menu-main .sub-menu-accessories .sub-menu-accessories-content{
+    position: absolute;
+    background-color: white;
+    padding: 10px 20px;
+    top: 120%;
+    z-index: 2;
+    left: 0;
+}
+
+.menu-main .sub-menu li::before{
+    content: none;
+}
+
+.menu-main .sub-menu ul{
+    padding-left: 0;
+    width: auto;
+}
+
+.menu-main .sub-menu li{
+    margin-left: 0;
+    width: auto;
+}
+
+.menu-main .sub-menu a{
+    font-size: 14px;
+}
+
+.sub-menu-shirt-content{
+    display: none;
+}
+
+.sub-menu-trousers-content{
+    display: none;
+}
+
+.sub-menu-accessories-content{
+    display: none;
+}
+
+.menu-main .sub-menu-shirt:hover .sub-menu-shirt-content{
+    display: block;
+}
+
+.menu-main .sub-menu-trousers:hover .sub-menu-trousers-content{
+    display: block;
+}
+
+.menu-main .sub-menu-accessories:hover .sub-menu-accessories-content{
+    display: block;
+}
+
+.menu-main .active .sub-menu a{
+    color: black;
+}
 
 /* Banner */
 .banner img{
@@ -248,16 +338,6 @@ height: 100%;
     /* line-height: 140px; */
 }
 
-.main-index .container-products .title-products i{
-    /* position: absolute;
-    top: 40px;
-    right: 300px;
-    color: red;
-
-    width: 70px;
-    height: auto;
-    z-index: 1; */
-}
 
 .main-index .container-products .products-card{
     background-color: white;
@@ -332,7 +412,6 @@ height: 100%;
     font-weight: 700;
     font-size: 12px;
     height: 20px;
-    margin-bottom: 0;
 }
 
 .main-index .container-products .products-card .quickview-detailview{
@@ -558,12 +637,20 @@ height: 100%;
     align-items: center;
     justify-content: center;
     text-decoration: none;
+
+    cursor: pointer;
 }
 
 .chat-button .fix-chat-button i{
     color:white;
     font-size: 22px;
     animation: shake 1s infinite ease-out;
+}
+
+
+.chat-button .fix-chat-button #closeChat{
+    display: none;
+    font-size: 24px;
 }
 
 .chat-button .fix-chat-button{
@@ -575,12 +662,18 @@ height: 100%;
 
     background-color: pink;
     padding: 20px 10px 40px;
-    border-radius: 10px;
     width: 300px;
     height: 350px;
-    bottom: 20px;
-    right: 16px;
+    bottom: 48px;
+    right: -15px;
 
+    display: none;
+
+    /* animation: fadeInRight .3s ease-in-out; */
+}
+
+.chat-button .fix-chat-button .chat-box.show{
+    display: block;
 }
 
 /* Filter */
@@ -732,6 +825,13 @@ height: 100%;
     font-weight: 700;
 }
 
+/* Login */
+.login-container{
+    margin-top: 28px;
+}
+
+
+
 
 /* Animation */
 
@@ -776,3 +876,24 @@ height: 100%;
       transform: rotate(-90deg);
     }
   }
+
+  @keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(300px);
+      }
+      to {
+        opacity: 1;
+      }
+  }
+
+  @keyframes fadeOutRight {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+      transform: translateX(300px);
+    }
+  }
+  
