@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product</title>
+    <title>Detail Product</title>
 
     <!-- Import css bootstrap -->
     <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css">
@@ -157,16 +157,56 @@
 <!-- Main index -->
 <div class="main-index">
 
-    <!-- Product -->
-    <div class="product-container">
-            <div class="container">       
-                <div class="row">
-                    <div class="col-12 col-sm-12 col-md-12">
+    <!-- Detail Product -->
+	<div class="container">
+		<div class="card">
+			<div class="container-fliud">
+				<div class="wrapper row">
+					<div class="preview col-md-6">
+						
+						<div class="preview-pic tab-content">
+						  <div class="tab-pane active" id="pic-1"><img src="./assests/images/sale product.jpeg" /></div>
+						  <div class="tab-pane" id="pic-2"><img src="./assests/images/sale product 1.jpg" /></div>
+						  <div class="tab-pane" id="pic-3"><img src="./assests/images/sale product 2.jpg" /></div>
+						  <div class="tab-pane" id="pic-4"><img src="./assests/images/sale product 3.jpg" /></div>
+						</div>
 
-                    </div>
-                </div>
-            </div>
-    </div>
+						<ul class="preview-thumbnail nav nav-tabs">
+						  <li class="active"><a data-target="#pic-1" data-toggle="tab"><img src="./assests/images/sale product.jpeg" /></a></li>
+						  <li><a data-target="#pic-2" data-toggle="tab"><img src="./assests/images/sale product 1.jpg" /></a></li>
+						  <li><a data-target="#pic-3" data-toggle="tab"><img src="./assests/images/sale product 2.jpg" /></a></li>
+						  <li><a data-target="#pic-4" data-toggle="tab"><img src="./assests/images/sale product 3.jpg" /></a></li>
+						</ul>
+						
+					</div>
+					<div class="details col-md-6">
+						<h3 class="product-title">Quần kaki</h3>
+
+						<p class="product-description">Còn hàng</p>
+						<h4 class="new-price">199.000đ</h4>
+						<p class="old-price"><del>295.000đ</del></p>
+						<h5 class="sizes">sizes:
+							<span class="size" data-toggle="tooltip" title="small">s</span>
+							<span class="size" data-toggle="tooltip" title="medium">m</span>
+							<span class="size" data-toggle="tooltip" title="large">l</span>
+							<span class="size" data-toggle="tooltip" title="xtra large">xl</span>
+                            <span class="size" data-toggle="tooltip" title="xtra large">xxl</span>
+						</h5>
+						<h5 class="colors">colors:
+							<span class="color black"></span>
+							<span class="color gray"></span>
+							<span class="color creamy-white"></span>
+						</h5>
+
+						<div class="action">
+							<button class="add-to-cart btn btn-default" type="button">Thêm vào giỏ hàng</button>
+							<button class="buy-now btn btn-default" type="button">Mua ngay</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
 </div>
  
