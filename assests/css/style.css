@@ -225,6 +225,8 @@ height: 100%;
 
 
 
+
+
 .menu-main .sub-menu-shirt .sub-menu-shirt-content{
     position: absolute;
     background-color: white;
@@ -268,6 +270,7 @@ height: 100%;
 
 .menu-main .sub-menu a{
     font-size: 14px;
+    white-space: nowrap;
 }
 
 .sub-menu-shirt-content{
