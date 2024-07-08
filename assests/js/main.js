@@ -1,5 +1,5 @@
 // Logo
-$('.owl-carousel').owlCarousel({
+$('.logo-banner').owlCarousel({
     loop:true,
     // margin:15,
     nav:false,
@@ -19,11 +19,35 @@ $('.owl-carousel').owlCarousel({
     }
 })
 
-// Sale products
-$('#sale .owl-carousel').owlCarousel({
+// Banner
+$('.fix-banner').owlCarousel({
   loop:true,
+  // margin:15,
+  nav:false,
+  dots:false,
+  autoplay: true,
+  autoplayTimeout: 3000,
+  responsive:{
+      0:{
+          items:1
+      },
+      600:{
+          items:1
+      },
+      1000:{
+          items:1
+      }
+  }
+})
+
+// Sale products
+$('.sale-products-banner').owlCarousel({
+  loop:true,
+  dots:false,
+  autoplay: true,
+  autoplayTimeout: 3000,
   margin:10,
-  nav:true,
+  nav:false,
   responsive:{
       0:{
           items:4
@@ -39,6 +63,35 @@ $('#sale .owl-carousel').owlCarousel({
     }
   }
 })
+
+/* Title products sale */
+var textWrapper = document.querySelector('.title-sale-products .letters');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.title-sale-products .letter',
+    scale: [0.3,1],
+    opacity: [0,1],
+    translateZ: 0,
+    easing: "easeOutExpo",
+    duration: 600,
+    delay: (el, i) => 70 * (i+1)
+  }).add({
+    targets: '.title-sale-products .line',
+    scaleX: [0,1],
+    opacity: [0.5,1],
+    easing: "easeOutExpo",
+    duration: 700,
+    offset: '-=875',
+    delay: (el, i, l) => 80 * (l - i)
+  }).add({
+    targets: '.title-sale-products',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000
+  });
 
 // Header main
 const headerMain = document.querySelector(".header-main")
