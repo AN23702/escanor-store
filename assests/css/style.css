@@ -1,16 +1,122 @@
 /* Import montserrat font */
 @font-face {
     font-family: 'Montserrat';
+    src: url('../fonts/montserrat/Montserrat-ExtraBold.eot');
+    src: url('../fonts/montserrat/Montserrat-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/montserrat/Montserrat-ExtraBold.woff2') format('woff2'),
+        url('../fonts/montserrat/Montserrat-ExtraBold.woff') format('woff'),
+        url('../fonts/montserrat/Montserrat-ExtraBold.ttf') format('truetype'),
+        url('../fonts/montserrat/Montserrat-ExtraBold.svg#Montserrat-ExtraBold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/montserrat/Montserrat-Black.eot');
+    src: url('../fonts/montserrat/Montserrat-Black.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/montserrat/Montserrat-Black.woff2') format('woff2'),
+        url('../fonts/montserrat/Montserrat-Black.woff') format('woff'),
+        url('../fonts/montserrat/Montserrat-Black.ttf') format('truetype'),
+        url('../fonts/montserrat/Montserrat-Black.svg#Montserrat-Black') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/montserrat/Montserrat-Bold.eot');
+    src: url('../fonts/montserrat/Montserrat-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/montserrat/Montserrat-Bold.woff2') format('woff2'),
+        url('../fonts/montserrat/Montserrat-Bold.woff') format('woff'),
+        url('../fonts/montserrat/Montserrat-Bold.ttf') format('truetype'),
+        url('../fonts/montserrat/Montserrat-Bold.svg#Montserrat-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/montserrat/Montserrat-Medium.eot');
+    src: url('../fonts/montserrat/Montserrat-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/montserrat/Montserrat-Medium.woff2') format('woff2'),
+        url('../fonts/montserrat/Montserrat-Medium.woff') format('woff'),
+        url('../fonts/montserrat/Montserrat-Medium.ttf') format('truetype'),
+        url('../fonts/montserrat/Montserrat-Medium.svg#Montserrat-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/montserrat/Montserrat-ExtraLight.eot');
+    src: url('../fonts/montserrat/Montserrat-ExtraLight.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/montserrat/Montserrat-ExtraLight.woff2') format('woff2'),
+        url('../fonts/montserrat/Montserrat-ExtraLight.woff') format('woff'),
+        url('../fonts/montserrat/Montserrat-ExtraLight.ttf') format('truetype'),
+        url('../fonts/montserrat/Montserrat-ExtraLight.svg#Montserrat-ExtraLight') format('svg');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/montserrat/Montserrat-Light.eot');
+    src: url('../fonts/montserrat/Montserrat-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/montserrat/Montserrat-Light.woff2') format('woff2'),
+        url('../fonts/montserrat/Montserrat-Light.woff') format('woff'),
+        url('../fonts/montserrat/Montserrat-Light.ttf') format('truetype'),
+        url('../fonts/montserrat/Montserrat-Light.svg#Montserrat-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
     src: url('../fonts/montserrat/Montserrat-Thin.eot');
     src: url('../fonts/montserrat/Montserrat-Thin.eot?#iefix') format('embedded-opentype'),
         url('../fonts/montserrat/Montserrat-Thin.woff2') format('woff2'),
         url('../fonts/montserrat/Montserrat-Thin.woff') format('woff'),
         url('../fonts/montserrat/Montserrat-Thin.ttf') format('truetype'),
         url('../fonts/montserrat/Montserrat-Thin.svg#Montserrat-Thin') format('svg');
-    /* font-weight: 100; */
+    font-weight: 100;
     font-style: normal;
     font-display: swap;
 }
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/montserrat/Montserrat-Regular.eot');
+    src: url('../fonts/montserrat/Montserrat-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/montserrat/Montserrat-Regular.woff2') format('woff2'),
+        url('../fonts/montserrat/Montserrat-Regular.woff') format('woff'),
+        url('../fonts/montserrat/Montserrat-Regular.ttf') format('truetype'),
+        url('../fonts/montserrat/Montserrat-Regular.svg#Montserrat-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/montserrat/Montserrat-SemiBold.eot');
+    src: url('../fonts/montserrat/Montserrat-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/montserrat/Montserrat-SemiBold.woff2') format('woff2'),
+        url('../fonts/montserrat/Montserrat-SemiBold.woff') format('woff'),
+        url('../fonts/montserrat/Montserrat-SemiBold.ttf') format('truetype'),
+        url('../fonts/montserrat/Montserrat-SemiBold.svg#Montserrat-SemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+
 
 /* reset browser */
 *{
@@ -24,7 +130,7 @@
 .header-top{
     width: 100%;
     height: 35px;
-    background-color: black;
+    background-image: url(../images/background\ img\ bottom\ footer.png);
 
     display: flex;
     align-items: center;
@@ -47,8 +153,16 @@
     margin-left: 4px;
 }
 
+.header-top .header-top-content .hot-line b{
+    font-weight: 700;
+}
+
 .header-top .header-top-content .user{
     display: flex;
+}
+
+.header-top .header-top-content .user b{
+    font-weight: 500;
 }
 
 .header-top .header-top-content .user a{
@@ -74,7 +188,7 @@
     align-items: center;
     font-size: 10px;
     color: white;
-    font-weight: 700;
+    font-weight: 500;
 }
 
 
@@ -85,6 +199,17 @@
     background-color: #fff;
 
     border-bottom: 1px solid black;
+}
+
+.scroll-menu{
+    width: 100%;
+    height: 90px;
+    background-color: #fff;
+    border-bottom: 1px solid black;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    animation: fadeInDown .3s ease-in-out;
 }
 
 
@@ -153,7 +278,7 @@ height: 100%;
 
 
 .menu-main .active a{
-    color: #ff0000;
+    font-weight: 700;
 }
 
 .menu-main li::before{
@@ -172,7 +297,7 @@ height: 100%;
 
 .menu-main li a{
     color: black;
-    font-weight: 700;
+    font-weight: 500;
     text-decoration: none;
 }
 
@@ -208,6 +333,7 @@ height: 100%;
     height: 32px;
     background-color:white;
     border-radius: 22px;
+    font-weight: 400;
 }
 
 /* Sub menu */
@@ -271,6 +397,7 @@ height: 100%;
 .menu-main .sub-menu a{
     font-size: 14px;
     white-space: nowrap;
+    font-weight: 500;
 }
 
 .sub-menu-shirt-content{
@@ -334,7 +461,7 @@ height: 100%;
 }
 
 .main-index .container-products .title-products h2{
-    font-weight: 900;
+    font-weight: 700;
     font-size: 30px;
 
     text-align: center;
@@ -424,6 +551,7 @@ height: 100%;
     height: 20px;
 }
 
+
 .main-index .container-products .products-card .quickview-detailview{
     background-color: black;
     width: 100%;
@@ -431,16 +559,13 @@ height: 100%;
     position: absolute;
     bottom: 0px;
     display: flex;
-
     transition: bottom .4s;
     z-index: -1;
-
 }
 
 
 .main-index .container-products .products-card:hover .quickview-detailview{
-    /* bottom: 0; */
-    z-index: 1;
+    z-index: 1 ;
 }
 
 
@@ -468,6 +593,124 @@ height: 100%;
     font-weight: 700;
     margin-bottom: 0;
 }
+
+/* Sale products */
+.main-index .sale-products .container-products .title-products h2{
+    color: white;
+}
+
+.main-index .sale-products .container-products{
+    background-image: url(../images/background\ img\ bottom\ footer.png);
+    position: relative;
+}
+
+.circles{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+.circles i{
+    position: absolute;
+    display: block;
+    list-style: none;
+    font-size: 20px;
+    animation: animate 25s linear infinite;
+    bottom: -150px;
+    color: red
+    
+}
+
+.circles i:nth-child(1){
+    left: 25%;
+    font-size: 80px;
+    animation-delay: 0s;
+}
+
+
+.circles i:nth-child(2){
+    left: 10%;
+    font-size: 20px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+
+.circles i:nth-child(3){
+    left: 70%;
+    font-size: 20px;
+    animation-delay: 4s;
+}
+
+.circles i:nth-child(4){
+    left: 40%;
+    font-size: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+
+.circles i:nth-child(5){
+    left: 65%;
+    font-size: 20px;
+    animation-delay: 0s;
+}
+
+.circles i:nth-child(6){
+    left: 75%;
+    font-size: 110px;
+    animation-delay: 3s;
+}
+
+.circles i:nth-child(7){
+    left: 35%;
+    font-size: 150px;
+    animation-delay: 7s;
+}
+
+.circles i:nth-child(8){
+    left: 50%;
+    font-size: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+
+.circles i:nth-child(9){
+    left: 20%;
+    font-size: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+
+.circles i:nth-child(10){
+    left: 85%;
+    font-size: 150px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+
+
+
+@keyframes animate {
+
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+
+    100%{
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+
+}
+
+
 
 /* Shirt products */
 .container-products .products-card .products-detail .products-price .price{
@@ -1065,3 +1308,13 @@ img {
     }
   }
   
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }

@@ -19,8 +19,34 @@ $('.owl-carousel').owlCarousel({
     }
 })
 
+// Sale products
+$('#sale .owl-carousel').owlCarousel({
+  loop:true,
+  margin:10,
+  nav:true,
+  responsive:{
+      0:{
+          items:2
+      },
+      600:{
+          items:4
+      },
+      1000:{
+          items:4
+      }
+  }
+})
 
+// Header main
+const headerMain = document.querySelector(".header-main")
 
+window.addEventListener('scroll', function() {
+  if (window.scrollY > 0) {
+    headerMain.classList.add('scroll-menu');
+  } else {
+    headerMain.classList.remove('scroll-menu');
+  }
+});
 
 /* Nut quay lai dau trang */
 window.onscroll = function() {
