@@ -116,35 +116,40 @@ window.onscroll = function() {
 //   Nut chat
 const chatButton = document.querySelector('.chat-button');
 const chatBox = document.querySelector('.chat-box');
-// let currentEffect = 'fadeInRight'
 
 const openChat = document.getElementById('openChat');
 const closeChat = document.getElementById('closeChat');
 
 let isChatOpen = false;
 
-chatButton.addEventListener('click', function() {
-    isChatOpen = !isChatOpen;
+openChat.addEventListener('click', function() {
+  isChatOpen = !isChatOpen;
 
-    if (isChatOpen) {
-      openChat.style.display = 'none';
-      closeChat.style.display = 'block';
-      chatBox.style.animation = 'fadeInRight .3s ease-in-out';
-    } else {
-      openChat.style.display = 'block';
-      closeChat.style.display = 'none';
-      chatBox.style.animation = 'fadeOutRight .3s ease-in-out';
-    }
+  if (isChatOpen) {
+    openChat.style.display = 'none';
+    closeChat.style.display = 'block';
+    chatBox.style.animation = 'fadeInRight .3s ease-in-out';
+  } else {
+    openChat.style.display = 'block';
+    closeChat.style.display = 'none';
+    chatBox.style.animation = 'fadeOutRight .3s ease-in-out';
+  }
 
-    // if (isChatOpen) {
-    //     chatBox.style.animation = 'fadeInRight .3s ease-in-out';
-    //   } else {
-    //     chatBox.style.animation = 'fadeOutRight .3s ease-in-out';
-    //   }
-
-    chatBox.classList.toggle('show');
-
+  chatBox.classList.toggle('show');
 });
 
+closeChat.addEventListener('click', function() {
+  isChatOpen = !isChatOpen;
 
+  if (isChatOpen) {
+    openChat.style.display = 'none';
+    closeChat.style.display = 'block';
+    chatBox.style.animation = 'fadeInRight .3s ease-in-out';
+  } else {
+    openChat.style.display = 'block';
+    closeChat.style.display = 'none';
+    chatBox.style.animation = 'fadeOutRight .3s ease-in-out';
+  }
 
+  chatBox.classList.toggle('show');
+});
