@@ -153,3 +153,44 @@ closeChat.addEventListener('click', function() {
 
   chatBox.classList.toggle('show');
 });
+
+// Detail product
+function img(anything) {
+  document.querySelector('.slide').src = anything;
+};
+
+// Option img
+$('.option-image').owlCarousel({
+  loop:true,
+  margin:10,
+  nav:true,
+  responsive:{
+      0:{
+          items:8
+      },
+      600:{
+          items:8
+      },
+      1000:{
+          items:8 
+      }
+  }
+})
+
+
+$('.owl-carousel').owlCarousel({
+  loop:true,
+  margin:10,
+  nav:true,
+  responsive:{
+      0:{
+          items:1
+      },
+      600:{
+          items:3
+      },
+      1000:{
+          items:5
+      }
+  }
+})
