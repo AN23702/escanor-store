@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trousers products</title>
+    <title>Login</title>
 
     <!-- Import css bootstrap -->
     <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css">
@@ -17,8 +17,11 @@
      <link rel="stylesheet" href="./lib/owlcarousel/assets/owl.carousel.min.css">
      <link rel="stylesheet" href="./lib/owlcarousel/assets/owl.theme.default.min.css">
 
-    <!-- Import product.css -->
-    <link rel="stylesheet" href="./assests/css/product.css">
+    <!-- Import sign up css -->
+     <link rel="stylesheet" href="./assests/css/sign-up.css">
+
+    <!-- Import style.css -->
+    <!-- <link rel="stylesheet" href="./assests/css/style.css"> -->
 </head>
 <body>
 <!-- Header Top -->
@@ -38,12 +41,14 @@
                             <i class="fa-solid fa-user"></i>
                             <b>Tài khoản</b>
                         </a>
+
                         <button class="cart">
                             <i class="fa-solid fa-cart-shopping"></i>
                             <b>Giỏ hàng</b>
                             <span>0</span>
                         </button>
-                    </div>    
+                    </div>  
+
                 </div>
             </div>
         </div>
@@ -69,7 +74,7 @@
                     </a>
 
                     <ul class="menu-main">
-                        <li class="active">
+                        <li>
                             <a href="/">Trang chủ</a>
                         </li>
 
@@ -153,329 +158,58 @@
  </div>
 
 
+
 <!-- Main index -->
 <div class="main-index">
 
-    <!-- Trousers Products -->
-    <div class="trousers-products">
-        <div class="container-products">
-            <div class="container">
-                
-                <!-- Title products -->
-                <div class="row">
-                    <div class="col-12 col-sm-12 col-md-12">
-                        <div class="title-products">
-                            <h2>QUẦN</h2>
-                            <div class="filter">
+    <!-- sign up -->
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-sm-6 col-md-6 fix-margin-signup-container">
 
-                            <div class="left-filter">
-                                <div class="classify-filter">
-                                    <span>Phân loại</span>
-                                    <i class="fa-solid fa-caret-down arrow-classify-filter"></i>
-
-                                    <div class="check-box-classify">
-                                        <input type="checkbox"></input>
-                                        <label>Quần âu</label><br>
-
-                                        <input type="checkbox"></input>
-                                        <label>Quần jean</label><br>
-
-                                        <input type="checkbox"></input>
-                                        <label>Quần short</label><br>
-                                    </div>
-                                </div>
-
-                                <div class="size-filter">
-                                    <span>Size</span>
-                                    <i class="fa-solid fa-caret-down arrow-size-filter"></i>
-
-                                    <div class="check-box-size">
-                                        <input type="checkbox"></input>
-                                        <label>S</label><br>
-
-                                        <input type="checkbox"></input>
-                                        <label>M</label><br>
-
-                                        <input type="checkbox"></input>
-                                        <label>L</label><br>
-
-                                        <input type="checkbox"></input>
-                                        <label>XL</label><br>
-
-                                        <input type="checkbox"></input>
-                                        <label>XXL</label><br>
-
-                                        <input type="checkbox"></input>
-                                        <label>XXXL</label>
-                                    </div>
-                                </div>
-
-                                <div class="price-filter">
-                                    <span>Khoảng giá</span>
-                                    <i class="fa-solid fa-caret-down arrow-price-filter"></i>
-
-                                    <div class="check-box-price">
-                                        <input type="checkbox"></input>
-                                        <label>Dưới 200,000</label><br>
-
-                                        <input type="checkbox"></input>
-                                        <label>Từ 200,000 - 500,000</label><br>
-
-                                        <input type="checkbox"></input>
-                                        <label>Từ 500,000 - 1,000,000</label><br>
-
-                                        <input type="checkbox"></input>
-                                        <label>Trên 1,000,000</label><br>
-                                    </div>
-                                </div>
-
-                            </div>
-
-                                <div class="right-filter">
-                                    <div class="arrange-filter">
-                                        <span>Sắp xếp theo:</span>
-                                        <select>
-                                            <option>Mới nhất</option>
-                                            <option>Giá giảm dần</option>
-                                            <option>Giá tăng dần</option>
-                                            <option>Sale</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Products -->
-                <div class="row">
-
-                    <div class="col-6 col-sm-3 col-md-3">
-                        <div class="products-card">
-                            <div class="products-img">
-                                <img src="./assests/images/trousers product.jpeg" alt="trousers-products-1">
-                            </div>
-
-                            <div class="products-detail">
-                                <h3 class="products-name">Quần âu</h3>
-                                <div class="products-price">
-                                    <p class="price">269.000đ</p>
-                                </div>
-                            </div>
-
-                            <div class="quickview-detailview">
-                                <a href="##" class="quickview">
-                                    <i class="fa-solid fa-cart-plus"></i>
-                                    <p>Mua ngay</p>
-                                </a>
-                                <a href="##" class="detailview">
-                                    <i class="fa-solid fa-eye"></i>
-                                    <p>Xem chi tiết</p>
-                                </a>
-                            </div>
-
-                        </div>
+                <form class="signup-container">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">HỌ TÊN</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nhập họ và tên">
+                        <small id="emailHelp" class="form-text text-muted"></small>
                     </div>
 
-                    <div class="col-6 col-sm-3 col-md-3">
-                        <div class="products-card">
-                            <div class="products-img">
-                                <img src="./assests/images/trousers product.jpeg" alt="trousers-products-1">
-                            </div>
-
-                            <div class="products-detail">
-                                <h3 class="products-name">Quần âu</h3>
-                                <div class="products-price">
-                                    <p class="price">269.000đ</p>
-                                </div>
-                            </div>
-
-                            <div class="quickview-detailview">
-                                <a href="##" class="quickview">
-                                    <i class="fa-solid fa-cart-plus"></i>
-                                    <p>Mua ngay</p>
-                                </a>
-                                <a href="##" class="detailview">
-                                    <i class="fa-solid fa-eye"></i>
-                                    <p>Xem chi tiết</p>
-                                </a>
-                            </div>
-
+                    <div class="form-group fix-margin">
+                        <label for="exampleInputEmail1">EMAIL HOẶC SỐ ĐIỆN THOẠI</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nhập email hoặc số điện thoại">
+                        <small id="emailHelp" class="form-text text-muted"></small>
                         </div>
+    
+
+                    <div class="form-group password-container">
+                        <label for="exampleInputPassword1">MẬT KHẨU</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Nhập mật khẩu của bạn">
                     </div>
 
-                    <div class="col-6 col-sm-3 col-md-3">
-                        <div class="products-card">
-                            <div class="products-img">
-                                <img src="./assests/images/trousers product.jpeg" alt="trousers-products-1">
-                            </div>
+                    <button type="submit" class="btn btn-primary ">ĐĂNG KÝ</button>
 
-                            <div class="products-detail">
-                                <h3 class="products-name">Quần âu</h3>
-                                <div class="products-price">
-                                    <p class="price">269.000đ</p>
-                                </div>
-                            </div>
+                    <div class="bottom-signup">
+                        <div class="signup-facebook-google">
+                            <p>Đăng nhập với</p>
+                            <a href="####">
+                                <i class="fa-brands fa-facebook"></i>
 
-                            <div class="quickview-detailview">
-                                <a href="##" class="quickview">
-                                    <i class="fa-solid fa-cart-plus"></i>
-                                    <p>Mua ngay</p>
-                                </a>
-                                <a href="##" class="detailview">
-                                    <i class="fa-solid fa-eye"></i>
-                                    <p>Xem chi tiết</p>
-                                </a>
-                            </div>
-
+                            </a>
+                            <a href="####">
+                                <i class="fa-brands fa-google"></i>
+                            </a>
                         </div>
                     </div>
+                    </form>
 
-                    <div class="col-6 col-sm-3 col-md-3">
-                        <div class="products-card">
-                            <div class="products-img">
-                                <img src="./assests/images/trousers product.jpeg" alt="trousers-products-1">
-                            </div>
 
-                            <div class="products-detail">
-                                <h3 class="products-name">Quần âu</h3>
-                                <div class="products-price">
-                                    <p class="price">269.000đ</p>
-                                </div>
-                            </div>
-
-                            <div class="quickview-detailview">
-                                <a href="##" class="quickview">
-                                    <i class="fa-solid fa-cart-plus"></i>
-                                    <p>Mua ngay</p>
-                                </a>
-                                <a href="##" class="detailview">
-                                    <i class="fa-solid fa-eye"></i>
-                                    <p>Xem chi tiết</p>
-                                </a>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <div class="col-6 col-sm-3 col-md-3">
-                        <div class="products-card">
-                            <div class="products-img">
-                                <img src="./assests/images/trousers product.jpeg" alt="trousers-products-1">
-                            </div>
-
-                            <div class="products-detail">
-                                <h3 class="products-name">Quần âu</h3>
-                                <div class="products-price">
-                                    <p class="price">269.000đ</p>
-                                </div>
-                            </div>
-
-                            <div class="quickview-detailview">
-                                <a href="##" class="quickview">
-                                    <i class="fa-solid fa-cart-plus"></i>
-                                    <p>Mua ngay</p>
-                                </a>
-                                <a href="##" class="detailview">
-                                    <i class="fa-solid fa-eye"></i>
-                                    <p>Xem chi tiết</p>
-                                </a>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <div class="col-6 col-sm-3 col-md-3">
-                        <div class="products-card">
-                            <div class="products-img">
-                                <img src="./assests/images/trousers product.jpeg" alt="trousers-products-1">
-                            </div>
-
-                            <div class="products-detail">
-                                <h3 class="products-name">Quần âu</h3>
-                                <div class="products-price">
-                                    <p class="price">269.000đ</p>
-                                </div>
-                            </div>
-
-                            <div class="quickview-detailview">
-                                <a href="##" class="quickview">
-                                    <i class="fa-solid fa-cart-plus"></i>
-                                    <p>Mua ngay</p>
-                                </a>
-                                <a href="##" class="detailview">
-                                    <i class="fa-solid fa-eye"></i>
-                                    <p>Xem chi tiết</p>
-                                </a>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <div class="col-6 col-sm-3 col-md-3">
-                        <div class="products-card">
-                            <div class="products-img">
-                                <img src="./assests/images/trousers product.jpeg" alt="trousers-products-1">
-                            </div>
-
-                            <div class="products-detail">
-                                <h3 class="products-name">Quần âu</h3>
-                                <div class="products-price">
-                                    <p class="price">269.000đ</p>
-                                </div>
-                            </div>
-
-                            <div class="quickview-detailview">
-                                <a href="##" class="quickview">
-                                    <i class="fa-solid fa-cart-plus"></i>
-                                    <p>Mua ngay</p>
-                                </a>
-                                <a href="##" class="detailview">
-                                    <i class="fa-solid fa-eye"></i>
-                                    <p>Xem chi tiết</p>
-                                </a>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <div class="col-6 col-sm-3 col-md-3">
-                        <div class="products-card">
-                            <div class="products-img">
-                                <img src="./assests/images/trousers product.jpeg" alt="trousers-products-1">
-                            </div>
-
-                            <div class="products-detail">
-                                <h3 class="products-name">Quần âu</h3>
-                                <div class="products-price">
-                                    <p class="price">269.000đ</p>
-                                </div>
-                            </div>
-
-                            <div class="quickview-detailview">
-                                <a href="##" class="quickview">
-                                    <i class="fa-solid fa-cart-plus"></i>
-                                    <p>Mua ngay</p>
-                                </a>
-                                <a href="##" class="detailview">
-                                    <i class="fa-solid fa-eye"></i>
-                                    <p>Xem chi tiết</p>
-                                </a>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    
-                    
-                </div>
             </div>
         </div>
     </div>
 
 </div>
-
  
+
 <!-- Footer -->
 <div class="footer">
 
@@ -758,9 +492,6 @@
 </div>
 
 
-
-
-
     <!-- Import js bootstrap -->
     <script src="./lib/bootstrap/js/bootstrap.bundle.min.js"></script>
 
@@ -770,10 +501,7 @@
     <!-- Import js owlcarousel -->
     <script src="./lib/owlcarousel/owl.carousel.min.js"></script>
 
-    <!-- Import activeMenu.js -->
-    <script src="./assests/js/activeMenu.js"></script>
-
-    <!-- Import product.js -->
-    <script src="./assests/js/product.js"></script>
+    <!-- Import signUp.js -->
+    <script src="./assests/js/signUp.js"></script>
 </body>
 </html>

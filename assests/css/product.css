@@ -446,7 +446,6 @@ height: 100%;
 
 .main-index .container-products .title-products{
     height: 140px;
-    /* position: relative; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -587,160 +586,6 @@ height: 100%;
     margin-bottom: 0;
 }
 
-/* Sale products */
-.main-index .sale-products .container-products .container{
-    padding-bottom: 40px;
-}
-
-.main-index .sale-products .container-products{
-    background-image: url(../images/background\ img\ bottom\ footer.png);
-    position: relative;
-}
-
-.circles{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    margin-bottom: 0;
-    padding-left: 0;
-}
-
-.circles i{
-    position: absolute;
-    display: block;
-    list-style: none;
-    font-size: 20px;
-    animation: animate 25s linear infinite;
-    bottom: -150px;
-    color: red;
-    z-index: 1;
-    pointer-events: none;
-    
-}
-
-.circles i:nth-child(1){
-    left: 25%;
-    font-size: 80px;
-    animation-delay: 0s;
-}
-
-
-.circles i:nth-child(2){
-    left: 10%;
-    font-size: 20px;
-    animation-delay: 2s;
-    animation-duration: 12s;
-}
-
-.circles i:nth-child(3){
-    left: 70%;
-    font-size: 20px;
-    animation-delay: 4s;
-}
-
-.circles i:nth-child(4){
-    left: 40%;
-    font-size: 60px;
-    animation-delay: 0s;
-    animation-duration: 18s;
-}
-
-.circles i:nth-child(5){
-    left: 65%;
-    font-size: 20px;
-    animation-delay: 0s;
-}
-
-.circles i:nth-child(6){
-    left: 75%;
-    font-size: 110px;
-    animation-delay: 3s;
-}
-
-.circles i:nth-child(7){
-    left: 35%;
-    font-size: 150px;
-    animation-delay: 7s;
-}
-
-.circles i:nth-child(8){
-    left: 50%;
-    font-size: 25px;
-    animation-delay: 15s;
-    animation-duration: 45s;
-}
-
-.circles i:nth-child(9){
-    left: 20%;
-    font-size: 15px;
-    animation-delay: 2s;
-    animation-duration: 35s;
-}
-
-.circles i:nth-child(10){
-    left: 85%;
-    font-size: 150px;
-    animation-delay: 0s;
-    animation-duration: 11s;
-}
-
-
-@keyframes animate {
-
-    0%{
-        transform: translateY(0) rotate(0deg);
-        opacity: 1;
-        border-radius: 0;
-    }
-
-    100%{
-        transform: translateY(-1000px) rotate(720deg);
-        opacity: 0;
-        border-radius: 50%;
-    }
-
-}
-
-/* Title products sale */
-.main-index .sale-products .container-products .title-sale-products{
-    font-weight: 700;
-    font-size: 30px;
-}
-
-.main-index .sale-products .container-products .title-sale-products .text-wrapper .letters{
-    display: inline-block;
-    line-height: 1em;
-    color: white;
-}
-
-.main-index .sale-products .container-products .title-sale-products .text-wrapper{
-    position: relative;
-    display: inline-block;
-    padding-top: 0.1em;
-    padding-right: 0.05em;
-    padding-bottom: 0.15em;
-}
-
-.main-index .sale-products .container-products .title-sale-products .text-wrapper .line{
-    opacity: 0;
-    position: absolute;
-    left: 0;
-    height: 3px;
-    width: 100%;
-    background-color: #fff;
-    transform-origin: 0 0;
-}
-
-.main-index .sale-products .container-products .title-sale-products .text-wrapper .line1{
-    top: 0;
-}
-
-.main-index .sale-products .container-products .title-sale-products .text-wrapper .line2{
-    bottom: 0;
-}
 
 /* Shirt products */
 .container-products .products-card .products-detail .products-price .price{
@@ -1184,6 +1029,10 @@ height: 100%;
     padding-right: 80px;
 }
 
+.filter .left-filter label{
+    font-weight: 500;
+}
+
 .filter .left-filter a{
     text-decoration: none;
     color: black;
@@ -1291,8 +1140,9 @@ height: 100%;
     justify-content: flex-end;
 }
 
+
 .filter span{
-    font-weight: 700;
+    font-weight: 500;
     font-size: 16px;
 }
 
@@ -1305,44 +1155,13 @@ height: 100%;
 .filter .right-filter select{
     border: none;
     font-size: 14px;
-    font-weight: 700;
+    font-weight: 500;
 }
 
 .filter .right-filter select option{
     font-size: 14px;
-    font-weight: 700;
+    font-weight: 500;
 }
-
-
-/* Detail product */
-.main-index .detail-product .detail-image{
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-}
-
-.main-index .detail-product .main-image img{
-    width: 80%;
-    object-fit: cover;
-}
-
-.main-index .detail-product .option-image{
-    width: 80%;
-    margin-top: 8px;
-    /* display: block;
-    display: flex; */
-}
-
-.main-index .detail-product .owl-carousel{
-    display: flex
-}
-
-
-.main-index .detail-product .option-image img{
-    width: 75px;
-    height: 75px;
-}
-
 
 
 /* Animation */
