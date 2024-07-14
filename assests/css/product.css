@@ -1009,6 +1009,11 @@ height: 100%;
     color: white;
     height: 50px;
 }
+
+.cart-box .order:hover{
+    background-color: white;
+    color: black;
+}
 /* Filter */
 .filter{
     width: 100%;

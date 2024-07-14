@@ -163,3 +163,18 @@ $('.relate-product-banner').owlCarousel({
       }
     }
   })
+
+  // Cart box
+const cartButton = document.querySelector('.cart');
+const closeCartButton = document.querySelector('.close-cart-box');
+const cartBox = document.querySelector('.cart-box');
+
+cartButton.addEventListener('click', () => {
+    cartBox.style.display = ('block');
+    cartBox.style.animation = ('fadeInRight .3s ease-in-out')
+});
+
+closeCartButton.addEventListener('click', () => {
+    cartBox.style.display = ('none');
+    cartBox.style.animation = ('fadeOutRight .3s ease-in-out')
+});
