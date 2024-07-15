@@ -20,3 +20,4 @@ mobileIcon.addEventListener('click', () => {
     fixMobileMenuMain.style.display = 'none';
     event.stopPropagation(); // Ngăn chặn sự kiện lan truyền
   });
+
