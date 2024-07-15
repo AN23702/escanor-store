@@ -1596,4 +1596,11 @@ height: 100%;
         .main-index .sale-products .title-sale-products .text-wrapper .letters{
             font-size: 15px;
         }
+
+        /* sale products */
+        .main-index .sale-products{
+            max-width: 100% !important;
+        }
+
+         
     }
