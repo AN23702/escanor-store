@@ -168,3 +168,4 @@ closeCartButton.addEventListener('click', () => {
     cartBox.style.display = ('none');
     cartBox.style.animation = ('fadeOutRight .3s ease-in-out')
 });
+
