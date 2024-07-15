@@ -1509,6 +1509,7 @@ height: 100%;
         .header-main .wrap-main .mobile-logo{
             display: block;
             margin: auto;
+            text-decoration: none;
         }
 
         .header-main .wrap-main .mobile-logo img:first-child{
@@ -1589,5 +1590,10 @@ height: 100%;
             right: 8px;
             z-index: 999999
             ;
+        }
+
+        /* title sale product */
+        .main-index .sale-products .title-sale-products .text-wrapper .letters{
+            font-size: 15px;
         }
     }
