@@ -1629,4 +1629,12 @@ height: 100%;
         .main-index .container-products .title-products .menu-main li{
             flex-shrink: 0;
         }
+
+        /* footer */
+        .footer .contact .fix-gap-footer-mobile{
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+
     }
