@@ -855,7 +855,7 @@ height: 100%;
     padding-bottom: 32px;
 }
 
-.footer .bottom-footer p,li{
+.footer .bottom-footer p{
     color: white;
     font-weight: 700;
 }
@@ -867,12 +867,15 @@ height: 100%;
 .footer .bottom-footer li{
     font-size: 14px;
     list-style: none;
-    margin-top: 10px
+    margin-top: 10px;
+    font-weight: 500;
+    color: white;
 }
 
 .footer .bottom-footer ul{
     padding-left: 0;
 }
+
 
 /* Nut quay lai dau trang */
 .back-to-header{
@@ -1637,4 +1640,28 @@ height: 100%;
             gap: 24px;
         }
 
+        /* bottom footer */
+        .footer .bottom-footer .fix-gap-bottom-footer-mobile{
+            display: flex;
+            flex-direction: column;
+            gap: 24px; 
+        }
+
+        .footer .bottom-footer .customer-support-mobile{
+            height: auto;
+        }
+
+        .footer .bottom-footer .customer-support-mobile .sub-menu-footer-mobile{
+            display: none;
+            animation: fadeInDown .3s ease-in-out;
+        }
+
+        .footer .bottom-footer .about-us-mobile{
+            height: auto;
+        }
+
+        .footer .bottom-footer .about-us-mobile .sub-menu-footer-mobile-1{
+            display: none;
+            animation: fadeInDown .3s ease-in-out;
+        }
     }

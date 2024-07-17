@@ -37,3 +37,11 @@ pSubMenuFooterMobile1.addEventListener('click', () =>{
     subMenuFooterMobile1.style.display = "none";
   }
 });
+
+// Left filter mobile box
+const leftFilter = document.querySelector('.left-filter');
+const leftFilterMobileBox = document.querySelector('.left-filter-mobile-box');
+
+leftFilter.addEventListener('click', () => {
+  leftFilterMobileBox.style.display = 'block';
+});

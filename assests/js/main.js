@@ -19,6 +19,7 @@ $('.logo-banner').owlCarousel({
     }
 })
 
+
 // Banner
 $('.fix-banner').owlCarousel({
   loop:true,

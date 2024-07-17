@@ -1253,3 +1253,330 @@ height: 100%;
         opacity: 1;
     }
   }
+
+  /* Responsive */
+.header-main .wrap-main .mobile-logo{
+    display: none;
+}
+
+.header-main .wrap-main .mobile-icon{
+    display: none;
+}
+
+.header-main .wrap-main .mobile-search{
+    display: none;
+}
+
+.filter-mobile{
+    display: none;
+}
+
+.left-filter-mobile-box{
+    display: none;
+}
+
+  /* Desktop */
+  @media screen and (max-width: 1279px) {
+
+  }
+
+  /* Tablet */
+  @media screen and (max-width: 768px) {
+    /* Header top */
+    .header-top .header-top-content{
+        display: block;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+    .header-top .header-top-content .hot-line{
+        display: none;
+    }
+    .header-top .header-top-content .user{
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+  }
+
+  /* Mobile */
+    /* Header top */
+    @media screen and (max-width: 480px) {
+        /* Header top */
+        .header-top .header-top-content{
+            display: block;
+            padding-left: 8px;
+            padding-right: 8px;
+        }
+        .header-top .header-top-content .hot-line{
+            display: none;
+        }
+        .header-top .header-top-content .user{
+            display: flex;
+            justify-content: space-between;
+        }
+
+
+        /* Header main */
+        .header-main .wrap-main{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .header-main .wrap-main .menu-main{
+            display: none;
+        }
+
+        .header-main .wrap-main .search{
+            display: none;
+        }
+
+        .header-main .wrap-main .logo{
+            /* width: 149.44px; */
+            display: none;
+        }
+
+        .header-main .wrap-main .mobile-logo{
+            display: block;
+            margin: auto;
+            text-decoration: none;
+        }
+
+        .header-main .wrap-main .mobile-logo img:first-child{
+            height: 70px;
+            object-fit: cover;
+        }
+
+        .header-main .wrap-main .mobile-logo img:nth-child(2){
+            height: 30px;
+            object-fit: cover;
+        }
+
+        .header-main .wrap-main .mobile-icon{
+            display: block;
+            margin-left: 8px;
+        }
+
+        .header-main .wrap-main .mobile-search{
+            display: block;
+            margin-right: 8px;
+        }
+
+        .header-main .wrap-main i{
+            font-size: 18px;
+        }
+
+        .header-main .wrap-main .mobile-icon .fix-mobile-menu-main{
+            position: fixed;
+            width: 40%;
+            height: 100%;
+            background-color: white;
+            top: 0;
+            left: 0;
+            z-index: 9;
+            display: none;
+        }
+
+        .header-main .wrap-main .mobile-icon .fix-mobile-menu-main .mobile-menu-main{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+
+            padding-left: 0;
+            position: relative;
+        }
+
+        .header-main .wrap-main .mobile-icon .fix-mobile-menu-main .mobile-menu-main img{
+            width: 80px;
+            object-fit: cover;
+        }
+
+        .header-main .wrap-main .mobile-icon .fix-mobile-menu-main .mobile-menu-main li{
+            list-style: none;
+            color: black;
+
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .header-main .wrap-main .mobile-icon .fix-mobile-menu-main .mobile-menu-main li a{
+            text-decoration: none;
+            color: black;
+        }
+
+        .header-main .wrap-main .mobile-icon .fix-mobile-menu-main .mobile-menu-main li b{
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .header-main .wrap-main .mobile-icon .fix-mobile-menu-main .mobile-menu-main li i{
+            font: 12px;
+        }
+
+        .header-main .wrap-main .mobile-icon .fix-mobile-menu-main .mobile-menu-main .close-mobile-icon{
+            position: absolute;
+            top: 8px;
+            right: 8px;
+            z-index: 999999
+            ;
+        }
+
+        /* footer */
+        .footer .contact .fix-gap-footer-mobile{
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        /* bottom footer */
+        .footer .bottom-footer .fix-gap-bottom-footer-mobile{
+            display: flex;
+            flex-direction: column;
+            gap: 24px; 
+        }
+
+        .footer .bottom-footer .customer-support-mobile{
+            height: auto;
+        }
+
+        .footer .bottom-footer .customer-support-mobile .sub-menu-footer-mobile{
+            display: none;
+            animation: fadeInDown .3s ease-in-out;
+        }
+
+        .footer .bottom-footer .about-us-mobile{
+            height: auto;
+        }
+
+        .footer .bottom-footer .about-us-mobile .sub-menu-footer-mobile-1{
+            display: none;
+            animation: fadeInDown .3s ease-in-out;
+        }
+
+        /* Filter */
+        .main-index .title-products .filter{
+            display: none;
+        }
+
+        .filter-mobile{
+            display: block;
+            width: 100%;
+            height: 40px;
+            background-color: #484848;
+
+            position: fixed;
+            bottom: 0;
+            left: 0;
+        }
+
+        .filter-mobile .fix-filter-mobile{
+            display: flex;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .filter-mobile .fix-filter-mobile .left-filter{
+            width: 50%;
+            height: 100%;
+            border-right: 1px solid white;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            font-size: 14px;
+
+        }
+
+        .filter-mobile .fix-filter-mobile .left-filter p{
+            margin-bottom: 0;
+        }
+
+        .filter-mobile .fix-filter-mobile .right-filter{
+            width: 50%;
+            height: 100%;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            font-size: 14px;
+        }
+
+        .filter-mobile .fix-filter-mobile .right-filter p{
+            margin-bottom: 0;
+        }
+
+        /* left filter mobile box */
+        .left-filter-mobile-box{
+            display: none;
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: white;
+            z-index: 120;
+        }
+
+        .left-filter-mobile-box .header-left-filter-mobile-box{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 24px;
+        }
+
+        .left-filter-mobile-box .header-left-filter-mobile-box h2{
+            margin-bottom: 0;
+            font-size: 24px;
+        }
+
+        .left-filter-mobile-box .header-left-filter-mobile-box i{
+            font-size: 20px;
+        }
+
+        .left-filter-mobile-box .classify-container{
+            margin-top: 28px;
+        }
+
+        .left-filter-mobile-box .classify-container h2{
+            font-size: 16px;
+        }
+
+        .left-filter-mobile-box .classify-container .classify label{
+            font-size: 14px;
+        } 
+
+        .left-filter-mobile-box .size-container{
+            margin-top: 28px;
+        }
+
+        .left-filter-mobile-box .size-container h2{
+            font-size: 16px;
+        }
+
+
+
+        .left-filter-mobile-box .size-container .size button{
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            font-size: 14px;
+            font-weight: 500;
+            background-color: white;
+        }
+
+        .left-filter-mobile-box .price-container{
+            margin-top: 28px;
+        }
+
+        .left-filter-mobile-box .price-container h2{
+            font-size: 16px;
+        }
+
+        .left-filter-mobile-box .price-container .price label{
+            font-size: 14px;
+        } 
+    }
