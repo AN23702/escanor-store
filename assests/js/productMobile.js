@@ -43,5 +43,5 @@ const leftFilter = document.querySelector('.left-filter');
 const leftFilterMobileBox = document.querySelector('.left-filter-mobile-box');
 
 leftFilter.addEventListener('click', () => {
-  leftFilterMobileBox.style.display = 'block';
+  leftFilterMobileBox.style.display = "block";
 });
