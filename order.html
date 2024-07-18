@@ -39,11 +39,11 @@
                             <b>Tài khoản</b>
                         </a>
 
-                        <div class="cart">
+                        <button class="cart">
                             <i class="fa-solid fa-cart-shopping"></i>
                             <b>Giỏ hàng</b>
                             <span>0</span>
-                        </div>
+                        </button>
                     </div>  
 
                 </div>
@@ -71,7 +71,7 @@
                     </a>
 
                     <ul class="menu-main">
-                        <li>
+                        <li class="active">
                             <a href="/">Trang chủ</a>
                         </li>
 
@@ -148,6 +148,53 @@
                             <i class="fa-solid fa-magnifying-glass"></i>
                         </button>
                     </div>
+
+                    <div class="mobile-icon">
+                        <i class="fa-solid fa-bars"></i>
+                        
+                        <div class="fix-mobile-menu-main">
+                            <ul class="mobile-menu-main">  
+                                <li>
+                                    <img src="./assests/images/escanor logo.webp">
+                                </li>
+                                
+                                <li class="sub-menu-shirt">
+                                    <a href="./shirt-products.html">Áo</a>
+                                </li>
+        
+                                <li class="sub-menu-trousers">
+                                    <a href="./trousers-products.html">Quần</a>
+                                </li>
+        
+                                <li class="sub-menu-accessories">
+                                    <a href="./accessories-products.html">Phụ kiện</a>
+                                </li>
+        
+                                <li>
+                                    <a href="#">Tin tức</a>
+                                </li>
+
+                                <li>
+                                    <i class="fa-solid fa-phone"></i>
+                                    <b>0123456789</b>
+                                </li>
+
+                                <div class="close-mobile-icon">
+                                    <i class="fa-solid fa-xmark"></i>
+                                </div>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <a class="mobile-logo" href="./">
+                        <img src="./assests/images/escanor logo.webp">
+                        <img src="./assests/images/text logo.png">
+                    </a>
+
+                    <div class="mobile-search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
                 </div>
             </div>
         </div>
@@ -181,11 +228,11 @@
                                     <input type="text" placeholder="Họ và tên">
                                 </div>
 
-                                <div class="col-7 col-sm-7 col-md-7">
+                                <div class="col-12 col-sm-7 col-md-7">
                                     <input type="text" placeholder="Email">
                                 </div>
 
-                                <div class="col-5 col-sm-5 col-md-5">
+                                <div class="col-12 col-sm-5 col-md-5">
                                     <input type="text" placeholder="Số điện thoại">
                                 </div>
 
@@ -193,7 +240,7 @@
                                     <input type="text" placeholder="Địa chỉ">
                                 </div>
 
-                                <div class="col-6 col-sm-6 col-md-6">
+                                <div class="col-12 col-sm-6 col-md-6">
                                     <input list="city" placeholder="Chọn tỉnh/thành phố">
                                     <datalist id="city" >
                                         <option value="Hà Nội">
@@ -204,14 +251,14 @@
                                       </datalist>
                                 </div>
 
-                                <div class="col-6 col-sm-6 col-md-6">
+                                <div class="col-12 col-sm-6 col-md-6">
                                     <input list="district" placeholder="Chọn quận/huyện">
                                     <datalist id="district
                                     ">
                                       </datalist>
                                 </div>
 
-                                <div class="col-6 col-sm-6 col-md-6">
+                                <div class="col-12 col-sm-6 col-md-6">
                                     <input list="ward" placeholder="Chọn phường/xã">
                                     <datalist id="district
                                     ">
@@ -363,12 +410,12 @@
 </div>
 
 <!-- Footer -->
- <div class="footer">
+<div class="footer">
 
 
     <div class="contact">
         <div class="container">
-            <div class="row">
+            <div class="row fix-gap-footer-mobile">
 
 
                 <div class="col-12 col-sm-3 col-md-3">
@@ -422,12 +469,12 @@
 
     <div class="bottom-footer">
         <div class="container">
-            <div class="row">
+            <div class="row fix-gap-bottom-footer-mobile">
 
                 <div class="col-12 col-sm-3 col-md-3">
-                    <div class="customer-support">
-                        <p>HỖ TRỢ KHÁCH HÀNG</p>
-                        <ul>
+                    <div class="customer-support customer-support-mobile">
+                        <p class="p-sub-menu-footer-mobile">HỖ TRỢ KHÁCH HÀNG</p>
+                        <ul class="sub-menu-footer-mobile">
                             <li>Hướng dẫn mua hàng</li>
                             <li>Hướng dẫn chọn size</li>
                             <li>Phương thức thanh toán</li>
@@ -440,9 +487,9 @@
                 </div>
 
                 <div class="col-12 col-sm-3 col-md-3">
-                    <div class="about-us">
-                        <p>VỀ CHÚNG TÔI</p>
-                        <ul>
+                    <div class="about-us about-us-mobile">
+                        <p class="p-sub-menu-footer-mobile-1">VỀ CHÚNG TÔI</p>
+                        <ul class="sub-menu-footer-mobile-1">
                             <li>Công ty ESCANOR</li>
                             <li>Địa chỉ</li>
                             <li>Mã số doanh nghiệp</li>
@@ -514,6 +561,33 @@
         </div>
     </div>
 
+<!-- Mobile search -->
+ <div class="mobile-search-box">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-12">
+                <div class="header-mobile-search">
+                    <h2>TÌM KIẾM</h2>
+                    <div class="close-mobile-search">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-12">
+                <div class="search">
+                    <input type="text" placeholder="Tìm kiếm">
+                    <button>
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+ </div>
+
 
 
  
@@ -533,6 +607,9 @@
 
     <!-- Import js owlcarousel -->
     <script src="./lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Import orderMenu.js -->
+    <script src="./assests/js/orderMobile.js"></script>
 
     <!-- Import order.js -->
     <script src="./assests/js/order.js"></script>
