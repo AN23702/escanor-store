@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>sign up</title>
+    <title>login</title>
 
     <!-- Import css bootstrap -->
     <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css">
@@ -54,7 +54,7 @@
 </div>
 
 <!-- Header Main -->
-<div class="header-main">
+ <div class="header-main">
     <div class="container">
         <div class="row">
             <div class="col-12 col-sm-12 col-md-12">
@@ -72,7 +72,7 @@
                     </a>
 
                     <ul class="menu-main">
-                        <li>
+                        <li class="active">
                             <a href="/">Trang chủ</a>
                         </li>
 
@@ -149,6 +149,55 @@
                             <i class="fa-solid fa-magnifying-glass"></i>
                         </button>
                     </div>
+
+
+
+                    <div class="mobile-icon">
+                        <i class="fa-solid fa-bars"></i>
+                        
+                        <div class="fix-mobile-menu-main">
+                            <ul class="mobile-menu-main">  
+                                <li>
+                                    <img src="./assests/images/escanor logo.webp">
+                                </li>
+                                
+                                <li class="sub-menu-shirt">
+                                    <a href="./shirt-products.html">Áo</a>
+                                </li>
+        
+                                <li class="sub-menu-trousers">
+                                    <a href="./trousers-products.html">Quần</a>
+                                </li>
+        
+                                <li class="sub-menu-accessories">
+                                    <a href="./accessories-products.html">Phụ kiện</a>
+                                </li>
+        
+                                <li>
+                                    <a href="#">Tin tức</a>
+                                </li>
+
+                                <li>
+                                    <i class="fa-solid fa-phone"></i>
+                                    <b>0123456789</b>
+                                </li>
+
+                                <div class="close-mobile-icon">
+                                    <i class="fa-solid fa-xmark"></i>
+                                </div>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <a class="mobile-logo" href="./">
+                        <img src="./assests/images/escanor logo.webp">
+                        <img src="./assests/images/text logo.png">
+                    </a>
+
+                    <div class="mobile-search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
                 </div>
             </div>
         </div>
@@ -163,7 +212,7 @@
     <!-- Login -->
     <div class="container">
         <div class="row">
-            <div class="col-12 col-sm-6 col-md-6 fix-margin-login-container">
+            <div class="col-6 col-sm-6 col-md-6 fix-margin-login-container">
 
                 <form class="login-container">
                     <div class="form-group">
@@ -209,7 +258,7 @@
 
     <div class="contact">
         <div class="container">
-            <div class="row">
+            <div class="row fix-gap-footer-mobile">
 
 
                 <div class="col-12 col-sm-3 col-md-3">
@@ -263,12 +312,12 @@
 
     <div class="bottom-footer">
         <div class="container">
-            <div class="row">
+            <div class="row fix-gap-bottom-footer-mobile">
 
                 <div class="col-12 col-sm-3 col-md-3">
-                    <div class="customer-support">
-                        <p>HỖ TRỢ KHÁCH HÀNG</p>
-                        <ul>
+                    <div class="customer-support customer-support-mobile">
+                        <p class="p-sub-menu-footer-mobile">HỖ TRỢ KHÁCH HÀNG</p>
+                        <ul class="sub-menu-footer-mobile">
                             <li>Hướng dẫn mua hàng</li>
                             <li>Hướng dẫn chọn size</li>
                             <li>Phương thức thanh toán</li>
@@ -281,9 +330,9 @@
                 </div>
 
                 <div class="col-12 col-sm-3 col-md-3">
-                    <div class="about-us">
-                        <p>VỀ CHÚNG TÔI</p>
-                        <ul>
+                    <div class="about-us about-us-mobile">
+                        <p class="p-sub-menu-footer-mobile-1">VỀ CHÚNG TÔI</p>
+                        <ul class="sub-menu-footer-mobile-1">
                             <li>Công ty ESCANOR</li>
                             <li>Địa chỉ</li>
                             <li>Mã số doanh nghiệp</li>
@@ -309,180 +358,207 @@
             </div>
         </div>
     </div>
-</div>
-
+ </div>
+    
 <!-- Nut quay lai dau trang -->
-<a class="back-to-header" href="#header">
-    <i class="fa-solid fa-arrow-up"></i>
-</a>
+    <a class="back-to-header" href="#header">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
 
 <!-- Nut chat  -->
-<div class="chat-button">
-    <div class="fix-chat-button">
-        <i class="fa-regular fa-comment-dots" id="openChat"></i>
-        <i class="fa-solid fa-xmark" id="closeChat"></i>
+    <div class="chat-button">
+        <div class="fix-chat-button">
+            <i class="fa-regular fa-comment-dots" id="openChat"></i>
+            <i class="fa-solid fa-xmark" id="closeChat"></i>
 
 
 
-        <!-- Chat box -->
-        <div class="chat-box">
-            <div class="fix-chat-box">
-                <div class="header-chat-box">
-                    <img src="./assests/images/escanor logo white.jpg" alt="escanor-logo">
-                    <p>Escanor store</p>
-                </div>
+            <!-- Chat box -->
+            <div class="chat-box">
+                <div class="fix-chat-box">
+                    <div class="header-chat-box">
+                        <img src="./assests/images/escanor logo white.jpg" alt="escanor-logo">
+                        <p>Escanor store</p>
+                    </div>
 
 
-                <div class="box-message">
-                    <div class="message">
-                        <span>Bạn cần tư vấn gì?</span>
+                    <div class="box-message">
+                        <div class="message">
+                            <span>Bạn cần tư vấn gì?</span>
+                        </div>
+                    </div>
+                    
+                    <div class="live-chat">
+                        <input type="text" placeholder="Nhập gì đó">
+                        <button>
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </button>
                     </div>
                 </div>
-                
-                <div class="live-chat">
-                    <input type="text" placeholder="Nhập gì đó">
-                    <button>
-                        <i class="fa-solid fa-paper-plane"></i>
-                    </button>
-                </div>
-            </div>
-        </div> 
+            </div> 
 
 
 
 
 
+        </div>
     </div>
-</div>
 
 <!-- Cart box -->
-<div class="cart-box">
-    <div class="container">
-        <div class="row">
+    <div class="cart-box">
+        <div class="container">
+            <div class="row">
 
-            <!-- Header cart box -->
-            <div class="col-12 col-sm-12 col-md-12">
-                <div class="header-cart-box">
-                    <h1>Giỏ hàng</h1>
-                    <p>(Đang có 1 sản phẩm)</p>
-                    <button class="close-cart-box">
-                        <i class="fa-solid fa-xmark"></i>
-                    </button>
+                <!-- Header cart box -->
+                <div class="col-12 col-sm-12 col-md-12">
+                    <div class="header-cart-box">
+                        <h1>Giỏ hàng</h1>
+                        <p>(Đang có 1 sản phẩm)</p>
+                        <button class="close-cart-box">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-12">
+                    <span class="line"></span>
                 </div>
             </div>
 
 
-        </div>
+            <div class="row">
+                <!-- Item cart box -->
+                 <div class="col-12 col-sm-12 col-md-12">
+                    <div class="item-cart-box">
 
-        <div class="row">
-            <div class="col-12 col-sm-12 col-md-12">
-                <span class="line"></span>
+                        <div class="card-item">
+                            <div class="img-item">
+                                <img src="./assests/images/img iem.jpeg" alt="img-item">
+                            </div>
+
+                            <div class="detail-item">
+                                <div class="title-product">
+                                    <p>Quần short - Nâu - 2XL</p>
+                                </div>
+
+                                <div class="price">
+                                    <p>70.000đ x1</p>
+                                </div>
+
+                                <button type="button">Xóa</button>
+                            </div>
+                        </div>
+
+                        <div class="card-item">
+                            <div class="img-item">
+                                <img src="./assests/images/img iem.jpeg" alt="img-item">
+                            </div>
+                            
+                            <div class="detail-item">
+                                <div class="title-product">
+                                    <p>Quần short - Nâu - 2XL</p>
+                                </div>
+
+                                <div class="price">
+                                    <p>70.000đ x1</p>
+                                </div>
+
+                                <button type="button">Xóa</button>
+                            </div>
+                        </div>
+
+                        <div class="card-item">
+                            <div class="img-item">
+                                <img src="./assests/images/img iem.jpeg" alt="img-item">
+                            </div>
+
+                            <div class="detail-item">
+                                <div class="title-product">
+                                    <p>Quần short - Nâu - 2XL</p>
+                                </div>
+
+                                <div class="price">
+                                    <p>70.000đ x1</p>
+                                </div>
+
+                                <button type="button">Xóa</button>
+                            </div>
+                        </div>
+
+                        <div class="card-item">
+                            <div class="img-item">
+                                <img src="./assests/images/img iem.jpeg" alt="img-item">
+                            </div>
+                            
+                            <div class="detail-item">
+                                <div class="title-product">
+                                    <p>Quần short - Nâu - 2XL</p>
+                                </div>
+
+                                <div class="price">
+                                    <p>70.000đ x1</p>
+                                </div>
+
+                                <button type="button">Xóa</button>
+                            </div>
+                        </div>
+                    </div>
+                 </div>
             </div>
-        </div>
 
-
-        <div class="row">
-            <!-- Item cart box -->
-             <div class="col-12 col-sm-12 col-md-12">
-                <div class="item-cart-box">
-
-                    <div class="card-item">
-                        <div class="img-item">
-                            <img src="./assests/images/img iem.jpeg" alt="img-item">
-                        </div>
-
-                        <div class="detail-item">
-                            <div class="title-product">
-                                <p>Quần short - Nâu - 2XL</p>
-                            </div>
-
-                            <div class="price">
-                                <p>70.000đ x1</p>
-                            </div>
-
-                            <button type="button">Xóa</button>
-                        </div>
-                    </div>
-
-                    <div class="card-item">
-                        <div class="img-item">
-                            <img src="./assests/images/img iem.jpeg" alt="img-item">
-                        </div>
-                        
-                        <div class="detail-item">
-                            <div class="title-product">
-                                <p>Quần short - Nâu - 2XL</p>
-                            </div>
-
-                            <div class="price">
-                                <p>70.000đ x1</p>
-                            </div>
-
-                            <button type="button">Xóa</button>
-                        </div>
-                    </div>
-
-                    <div class="card-item">
-                        <div class="img-item">
-                            <img src="./assests/images/img iem.jpeg" alt="img-item">
-                        </div>
-
-                        <div class="detail-item">
-                            <div class="title-product">
-                                <p>Quần short - Nâu - 2XL</p>
-                            </div>
-
-                            <div class="price">
-                                <p>70.000đ x1</p>
-                            </div>
-
-                            <button type="button">Xóa</button>
-                        </div>
-                    </div>
-
-                    <div class="card-item">
-                        <div class="img-item">
-                            <img src="./assests/images/img iem.jpeg" alt="img-item">
-                        </div>
-                        
-                        <div class="detail-item">
-                            <div class="title-product">
-                                <p>Quần short - Nâu - 2XL</p>
-                            </div>
-
-                            <div class="price">
-                                <p>70.000đ x1</p>
-                            </div>
-
-                            <button type="button">Xóa</button>
-                        </div>
-                    </div>
-                </div>
-             </div>
-        </div>
-
-        <div class="row">
-            <div class="col-12 col-sm-12 col-md-12">
-                <span class="line"></span>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-12 col-sm-12 col-md-12">
-                <div class="tital-price">
-                    <h1>Tổng tiền</h1>
-                    <p>79.000đ</p>
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-12">
+                    <span class="line"></span>
                 </div>
             </div>
-        </div>
 
-        <div class="row">
-            <div class="col-12 col-sm-12 col-md-12">
-                <button class="order" type="button">ĐẶT HÀNG</button>
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-12">
+                    <div class="tital-price">
+                        <h1>Tổng tiền</h1>
+                        <p>79.000đ</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-12">
+                    <button class="order" type="button">ĐẶT HÀNG</button>
+                </div>
             </div>
         </div>
     </div>
-</div>
+
+<!-- Mobile search -->
+ <div class="mobile-search-box">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-12">
+                <div class="header-mobile-search">
+                    <h2>TÌM KIẾM</h2>
+                    <div class="close-mobile-search">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-12">
+                <div class="search">
+                    <input type="text" placeholder="Tìm kiếm">
+                    <button>
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+ </div>
 
 
     <!-- Import js bootstrap -->
@@ -493,6 +569,9 @@
 
     <!-- Import js owlcarousel -->
     <script src="./lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Import loginMobile.js -->
+     <script src="./assests/js/loginMobile.js"></script>
 
     <!-- Import login.js -->
     <script src="./assests/js/login.js"></script>

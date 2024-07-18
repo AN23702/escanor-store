@@ -39,9 +39,52 @@ pSubMenuFooterMobile1.addEventListener('click', () =>{
 });
 
 // Left filter mobile box
-const leftFilter = document.querySelector('.left-filter');
+const leftFilterMobile = document.querySelector('.left-filter-mobile');
 const leftFilterMobileBox = document.querySelector('.left-filter-mobile-box');
+const closeLeftFilterMobileBox = document.querySelector('.close-left-filter-mobile-box');
 
-leftFilter.addEventListener('click', () => {
-  leftFilterMobileBox.style.display = "block";
+leftFilterMobile.addEventListener('click', () => {
+  if (leftFilterMobileBox.style.display === "none") {
+    leftFilterMobileBox.style.display = "block";
+  } else {
+    leftFilterMobileBox.style.display = "none";
+  }
+});
+
+closeLeftFilterMobileBox.addEventListener('click', () => {
+  leftFilterMobileBox.style.display = "none"
+})
+
+// Mobile search
+const mobileSearch = document.querySelector('.mobile-search');
+const mobileSearchBox = document.querySelector('.mobile-search-box');
+const closeMobileSearch = document.querySelector('.close-mobile-search');
+
+mobileSearch.addEventListener('click', () => {
+  if (mobileSearchBox.style.display === "none") {
+    mobileSearchBox.style.display = "block";
+  } else {
+    mobileSearchBox.style.display = "none";
+  }
+});
+
+closeMobileSearch.addEventListener('click', () => {
+    mobileSearchBox.style.display = "none";
+});
+
+// right filter mobile
+const rightFilterMobile = document.querySelector('.right-filter-mobile');
+const rightFilterMobileBox = document.querySelector('.right-filter-mobile-box');
+const closeRightFilterMobileBox = document.querySelector('.close-right-filter-mobile-box')
+
+rightFilterMobile.addEventListener('click', () => {
+  if (rightFilterMobileBox.style.display === "none") {
+    rightFilterMobileBox.style.display = "block";
+  } else {
+    rightFilterMobileBox.style.display = "none";
+  }
+});
+
+closeRightFilterMobileBox.addEventListener('click', () => {
+    rightFilterMobileBox.style.display = "none";
 });
