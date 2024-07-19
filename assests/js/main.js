@@ -1,5 +1,12 @@
 const API_URL = "https://2c8n4v-3000.csb.app/products";
 
+// Phan trang
+const itemsPerPage = 8;
+let currentPage = 1;
+let totalPages = 0;
+
+
+
 // call api
 const getApi = async(url) => {
     let response = await axios.get(url); //response: bien tra ve, tat ca api
@@ -60,6 +67,28 @@ const showSaleProducts = (dataSaleProducts) =>{
     });
 
     rowJsSaleProducts.innerHTML = HTML;
+    $('.sale-products-banner').owlCarousel({
+        loop:true,
+        dots:false,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        margin:10,
+        nav:false,
+        responsive:{
+            0:{
+                items:2
+            },
+            600:{
+                items:2
+            },
+            1000:{
+                items:4
+            },
+            1500:{
+              items:4
+          }
+        }
+      })
 
 }
 
@@ -224,28 +253,28 @@ $('.fix-banner').owlCarousel({
 })
 
 // Sale products
-$('.sale-products-banner').owlCarousel({
-  loop:true,
-  dots:false,
-  autoplay: true,
-  autoplayTimeout: 3000,
-  margin:10,
-  nav:false,
-  responsive:{
-      0:{
-          items:2
-      },
-      600:{
-          items:2
-      },
-      1000:{
-          items:4
-      },
-      1500:{
-        items:4
-    }
-  }
-})
+// $('.sale-products-banner').owlCarousel({
+//   loop:true,
+//   dots:false,
+//   autoplay: true,
+//   autoplayTimeout: 3000,
+//   margin:10,
+//   nav:false,
+//   responsive:{
+//       0:{
+//           items:2
+//       },
+//       600:{
+//           items:2
+//       },
+//       1000:{
+//           items:4
+//       },
+//       1500:{
+//         items:4
+//     }
+//   }
+// })
 
 /* Title products sale */
 var textWrapper = document.querySelector('.title-sale-products .letters');
