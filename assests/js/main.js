@@ -1,3 +1,185 @@
+const API_URL = "https://2c8n4v-3000.csb.app/products";
+
+// call api
+const getApi = async(url) => {
+    let response = await axios.get(url); //response: bien tra ve, tat ca api
+
+    let apiSaleProduct = response.data.filter(products => products.sale === "y");
+    showSaleProducts(apiSaleProduct);
+
+    let apiShirtProduct = response.data.filter(products => products.classify === "shirt");
+    showShirtProducts(apiShirtProduct);
+
+    let apiTrousersProduct = response.data.filter(products => products.classify === "trousers");
+    showTrousersProducts(apiTrousersProduct);
+
+    let apiAccessoriesProduct = response.data.filter(products => products.classify === "accessories");
+    showAccessoriesProducts(apiAccessoriesProduct);
+
+}
+getApi(API_URL);
+
+// show sale products to html
+let rowJsSaleProducts = document.querySelector(".row-js-sale-products");
+
+
+const showSaleProducts = (dataSaleProducts) =>{
+    let HTML =``;
+    dataSaleProducts.forEach(value =>{
+      HTML += `
+                <div class="item">
+              <div class="products-card">
+
+                  <a href="./detail-product.html">
+                      <div class="products-img">
+                          <img src="${value.img}" alt="sale-products-1">
+                      </div>
+                  </a>
+                  <div class="products-detail">
+                      <h3 class="products-name">${value.name}</h3>
+                      <div class="products-price">
+                          <p class="new-price">${value.price}</p>
+                          <p class="old-price"><del>${value.oldprice}</del></p>
+                      </div>
+                  </div>
+
+                  <div class="quickview-detailview">
+                      <a href="##" class="quickview">
+                          <i class="fa-solid fa-cart-plus"></i>
+                          <p>Mua ngay</p>
+                      </a>
+                      <a href="##" class="detailview">
+                          <i class="fa-solid fa-eye"></i>
+                          <p>Xem chi tiết</p>
+                      </a>
+                  </div>
+
+              </div>
+          </div>
+      `
+    });
+
+    rowJsSaleProducts.innerHTML = HTML;
+
+}
+
+// show shirt products to html
+let rowJsShirtProducts = document.querySelector(".row-js-shirt-products");
+
+const showShirtProducts = (dataShirtProducts) =>{
+    let HTML =``;
+    dataShirtProducts.forEach(value =>{
+      HTML += `
+                          <div class="col-6 col-sm-3 col-md-3">
+                        <div class="products-card">
+                            <div class="products-img">
+                                <img src="${value.img}" alt="shirt-product-1">
+                            </div>
+
+                            <div class="products-detail">
+                                <h3 class="products-name">${value.name}</h3>
+                                <div class="products-price">
+                                    <p class="price">${value.price}</p>
+                                    <p class="old-price"><del>${value.oldprice}</del></p>
+                                </div>
+                            </div>
+
+                            <div class="quickview-detailview">
+                                <a href="##" class="quickview">
+                                    <i class="fa-solid fa-cart-plus"></i>
+                                    <p>Mua ngay</p>
+                                </a>
+                                <a href="##" class="detailview">
+                                    <i class="fa-solid fa-eye"></i>
+                                    <p>Xem chi tiết</p>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+      `
+    });
+    rowJsShirtProducts.innerHTML = HTML;
+}
+
+
+// show trousers products to html
+let rowJsTrousersProducts = document.querySelector(".row-js-trousers-products");
+
+const showTrousersProducts = (dataTrousersProducts) => {
+    let HTML =``;
+    dataTrousersProducts.forEach(value =>{
+        HTML += `
+                            <div class="col-6 col-sm-3 col-md-3">
+                        <div class="products-card">
+                            <div class="products-img">
+                                <img src="${value.img}" alt="trousers-products-1">
+                            </div>
+
+                            <div class="products-detail">
+                                <h3 class="products-name">${value.name}</h3>
+                                <div class="products-price">
+                                    <p class="price">${value.price}</p>
+                                    <p class="old-price"><del>${value.oldprice}</del></p>
+                                </div>
+                            </div>
+
+                            <div class="quickview-detailview">
+                                <a href="##" class="quickview">
+                                    <i class="fa-solid fa-cart-plus"></i>
+                                    <p>Mua ngay</p>
+                                </a>
+                                <a href="##" class="detailview">
+                                    <i class="fa-solid fa-eye"></i>
+                                    <p>Xem chi tiết</p>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+        `
+    });
+    rowJsTrousersProducts.innerHTML = HTML;
+}
+
+// show accessories products to html
+let rowJsAccessoriesProducts = document.querySelector(".row-js-accessories-products")
+
+const showAccessoriesProducts = (dataAccessoriesProducts) => {
+    let HTML =``;
+    dataAccessoriesProducts.forEach(value =>{
+        HTML += `
+                              <div class="col-6 col-sm-3 col-md-3">
+                        <div class="products-card">
+                            <div class="products-img">
+                                <img src="${value.img}" alt="accessories-products-1">
+                            </div>
+
+                            <div class="products-detail">
+                                <h3 class="products-name">${value.name}</h3>
+                                <div class="products-price">
+                                    <p class="price">${value.price}</p>
+                                    <p class="old-price"><del>${value.oldprice}</del></p>
+                                </div>
+                            </div>
+
+                            <div class="quickview-detailview">
+                                <a href="##" class="quickview">
+                                    <i class="fa-solid fa-cart-plus"></i>
+                                    <p>Mua ngay</p>
+                                </a>
+                                <a href="##" class="detailview">
+                                    <i class="fa-solid fa-eye"></i>
+                                    <p>Xem chi tiết</p>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+        `
+    });
+    rowJsAccessoriesProducts.innerHTML = HTML;
+}
 // Logo
 $('.logo-banner').owlCarousel({
     loop:true,
