@@ -277,7 +277,9 @@ height: 100%;
     margin-left: 0;
 }
 
-
+.menu-main li:nth-child(5){
+    color: black;
+}
 
 .menu-main .active a{
     font-weight: 700;
@@ -614,6 +616,7 @@ height: 100%;
 
     border: 1px solid gray;
     border-right: none;
+    padding-left: 8px;
 }
 
 .footer .contact .sign-up .sign-up-block input:focus{
@@ -1298,24 +1301,235 @@ height: 100%;
 
   /* Tablet */
   @media screen and (max-width: 768px) {
-    /* Header top */
-    .header-top .header-top-content{
-        display: block;
-        padding-left: 8px;
-        padding-right: 8px;
-    }
-    .header-top .header-top-content .hot-line{
-        display: none;
-    }
-    .header-top .header-top-content .user{
-        display: flex;
-        justify-content: space-between;
-    }
+        /* Header top */
+        .header-top .header-top-content{
+            display: block;
+            padding-left: 8px;
+            padding-right: 8px;
+        }
+        .header-top .header-top-content .hot-line{
+            display: none;
+        }
+        .header-top .header-top-content .user{
+            display: flex;
+            justify-content: space-between;
+        }
 
-  }
+
+        /* Header main */
+        .header-main .wrap-main{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .header-main .wrap-main .menu-main{
+            display: none;
+        }
+
+        .header-main .wrap-main .search{
+            display: none;
+        }
+
+        .header-main .wrap-main .logo{
+            /* width: 149.44px; */
+            display: none;
+        }
+
+        .header-main .wrap-main .mobile-logo{
+            display: block;
+            margin: auto;
+            text-decoration: none;
+        }
+
+        .header-main .wrap-main .mobile-logo img:first-child{
+            height: 70px;
+            object-fit: cover;
+        }
+
+        .header-main .wrap-main .mobile-logo img:nth-child(2){
+            height: 30px;
+            object-fit: cover;
+        }
+
+        .header-main .wrap-main .mobile-icon{
+            display: block;
+            margin-left: 8px;
+        }
+
+        .header-main .wrap-main .mobile-search{
+            display: block;
+            margin-right: 8px;
+        }
+
+        .header-main .wrap-main i{
+            font-size: 18px;
+        }
+
+        .header-main .wrap-main .mobile-icon .fix-mobile-menu-main{
+            position: fixed;
+            width: 40%;
+            height: 100%;
+            background-color: white;
+            top: 0;
+            left: 0;
+            z-index: 9;
+            display: none;
+
+            animation: fadeInLeft .3s ease-in-out;
+        }
+
+        .header-main .wrap-main .mobile-icon .fix-mobile-menu-main .mobile-menu-main{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+
+            padding-left: 0;
+            position: relative;
+        }
+
+        .header-main .wrap-main .mobile-icon .fix-mobile-menu-main .mobile-menu-main img{
+            width: 80px;
+            object-fit: cover;
+        }
+
+        .header-main .wrap-main .mobile-icon .fix-mobile-menu-main .mobile-menu-main li{
+            list-style: none;
+            color: black;
+
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .header-main .wrap-main .mobile-icon .fix-mobile-menu-main .mobile-menu-main li a{
+            text-decoration: none;
+            color: black;
+        }
+
+        .header-main .wrap-main .mobile-icon .fix-mobile-menu-main .mobile-menu-main li b{
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .header-main .wrap-main .mobile-icon .fix-mobile-menu-main .mobile-menu-main li i{
+            font: 12px;
+        }
+
+        .header-main .wrap-main .mobile-icon .fix-mobile-menu-main .mobile-menu-main .close-mobile-icon{
+            position: absolute;
+            top: 8px;
+            right: 8px;
+            z-index: 999999
+            ;
+        }
+
+        /* menu main product */
+        .main-index .container-products .title-products .menu-main{
+            overflow: hidden;
+            overflow-x: auto;
+        }
+
+        .main-index .container-products .title-products .menu-main li{
+            flex-shrink: 0;
+        }
+
+        /* Detail product */
+        .main-index .detail-product .detail-info .button-product button{
+            color: white;
+            background-color: black;
+            width: 47%;
+            height: 50px;
+        
+            font-size: 8px;
+            font-weight: 400;
+        }
+
+        /* footer */
+        .call-buy, .call-support{
+            margin-bottom: 20px;
+        }
+
+        /* cart box */
+        .cart-box{
+            width: 100%;
+        }
+
+        /* Mobile search */
+        .mobile-search-box {
+            display: none;
+            position: fixed;
+            top: 0;
+            right: 0;
+            z-index: 121;
+
+            width: 90%;
+            height: 100%;
+            background-color: white;
+            border-left: 1px black solid;
+            animation: fadeInRight .3s ease-in-out;
+        }
+
+        .mobile-search-box .header-mobile-search {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 48px;
+        }
+
+        .mobile-search-box .header-mobile-search h2{
+            font-size: 24px;
+        }
+
+        .mobile-search-box .header-mobile-search i{
+            font-size: 20px;
+        }
+
+        .mobile-search-box .search {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 8px 8px;
+            border: 1px black solid;
+            border-radius: 25px;
+
+            margin-top: 24px;
+        }
+
+        .mobile-search-box .search input{
+            border: none;
+        }
+
+        .mobile-search-box .search input:focus{
+            outline: none;
+        }
+
+        .mobile-search-box .search button {
+            border: none;
+            background-color: white;
+        }
+
+        /* Main img */
+        .main-index .detail-product{
+            max-width: 100%;
+        }
+
+        .main-index .detail-product .detail-image .main-image img{
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .main-index .detail-product .detail-info{
+            margin-top: 24px;
+        }
+
+        .main-index .relate-product{
+            max-width: 100%;
+        }
+    }
 
   /* Mobile */
-    /* Header top */
     @media screen and (max-width: 480px) {
         /* Header top */
         .header-top .header-top-content{

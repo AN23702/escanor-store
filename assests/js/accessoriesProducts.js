@@ -18,7 +18,7 @@ const showAccessoriesProducts = (dataAccessoriesProducts) => {
     let HTML =``;
     dataAccessoriesProducts.forEach(value =>{
         HTML += `
-                              <div class="col-6 col-sm-3 col-md-3">
+                              <div class="col-6 col-sm-4 col-md-3">
                         <div class="products-card">
                             <div class="products-img">
                                 <img src="${value.img}" alt="accessories-products-1">

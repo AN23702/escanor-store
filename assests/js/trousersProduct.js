@@ -22,7 +22,7 @@ const showTrousersProducts = (dataTrousersProducts) => {
     let HTML =``;
     dataTrousersProducts.forEach(value =>{
         HTML += `
-                            <div class="col-6 col-sm-3 col-md-3">
+                            <div class="col-6 col-sm-4 col-md-3">
                         <div class="products-card">
                             <div class="products-img">
                                 <img src="${value.img}" alt="trousers-products-1">

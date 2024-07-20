@@ -25,7 +25,7 @@ const showShirtProducts = (dataShirtProducts) =>{
     let HTML =``;
     dataShirtProducts.forEach(value =>{
       HTML += `
-                          <div class="col-6 col-sm-3 col-md-3">
+                          <div class="col-6 col-sm-4 col-md-3">
                         <div class="products-card">
                             <div class="products-img">
                                 <img src="${value.img}" alt="shirt-product-1">
@@ -65,7 +65,7 @@ const showTrousersProducts = (dataTrousersProducts) => {
     let HTML =``;
     dataTrousersProducts.forEach(value =>{
         HTML += `
-                            <div class="col-6 col-sm-3 col-md-3">
+                            <div class="col-6 col-sm-4 col-md-3">
                         <div class="products-card">
                             <div class="products-img">
                                 <img src="${value.img}" alt="trousers-products-1">
@@ -104,7 +104,7 @@ const showAccessoriesProducts = (dataAccessoriesProducts) => {
     let HTML =``;
     dataAccessoriesProducts.forEach(value =>{
         HTML += `
-                              <div class="col-6 col-sm-3 col-md-3">
+                              <div class="col-6 col-sm-4 col-md-3">
                         <div class="products-card">
                             <div class="products-img">
                                 <img src="${value.img}" alt="accessories-products-1">

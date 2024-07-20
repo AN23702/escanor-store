@@ -96,7 +96,10 @@ $('.option-image').owlCarousel({
       0:{
           items:4
       },
-      600:{
+      481:{
+        items:4
+      },
+      769:{
           items:8
       },
       1000:{
