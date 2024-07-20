@@ -478,6 +478,7 @@ height: 100%;
     padding-top: 16px;
     position: relative;
     border: none;
+    padding-bottom: 48px;
 }
 
 .products-card:hover{
@@ -533,7 +534,6 @@ height: 100%;
 .products-card .products-detail .products-price .old-price{
     font-size: 12px;
     margin-bottom: 0;
-    position: absolute;
     right: 0;
 }
 
@@ -1649,6 +1649,15 @@ height: 100%;
         flex-shrink: 0;
     }
 
+    .products-card .products-detail .products-name{
+        font-size: 14px;
+        font-weight: 600;
+        height: 20px;
+        margin-bottom: 0;
+    }
+    
+
+
     /* footer */
     .call-buy, .call-support{
         margin-bottom: 20px;
@@ -1970,4 +1979,8 @@ height: 100%;
             border: none;
             background-color: white;
         }
+
+
+
+        
     }
